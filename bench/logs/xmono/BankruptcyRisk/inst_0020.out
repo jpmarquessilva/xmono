@@ -1,0 +1,26 @@
+Running ./scripts/xmono on the following classifier & instance:
+    Fmt file:  ./bench/spec/BankruptcyRisk/BR.txt
+    Inst file: ./bench/inst/BankruptcyRisk/inst_0020.txt
+Additional options:  -t RDT -N all -w -s -v 1 
+AXp: 7 9
+WARNING! DIMACS header mismatch: wrong number of variables.
+CXp: 9
+WARNING! DIMACS header mismatch: wrong number of variables.
+CXp: 7
+WARNING! DIMACS header mismatch: wrong number of variables.
+Total running time:   0.032394 s
+Summary of running ./scripts/xmono
+Total number of explanations: 3
+Average explanation size:     1.33
+Total number of AXp's:        1
+Average AXp size:             2.00
+Total number of CXp's:        2
+Average CXp size:             1.00
+Number of SAT oracle calls:   4
+Total time in SAT oracle:     0.029941
+Number of classifier calls:   34
+Total time in classifier:     0.000158
+
+real	0m0.072s
+user	0m0.041s
+sys	0m0.023s

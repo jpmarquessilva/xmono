@@ -1,0 +1,33 @@
+#!/usr/bin/env perl
+
+push @INC, \&resolve_inc;
+
+use strict;
+use warnings;
+
+require HardCoded;
+import HardCoded qw( &rdt_classifier );
+    
+# Hard-coded monotonic DT for the Bankruptcy Risk dataset.
+die "Usage: $0 <inst>\n" unless @ARGV == 1;
+
+my $inst = shift @ARGV;
+my @vect = split(',', $inst);
+my $class = &rdt_classifier(\@vect);
+print "$class\n";
+
+1;
+
+#------------------------------------------------------------------------------#
+# Auxiliary functions
+#------------------------------------------------------------------------------#
+
+sub resolve_inc() {    # Copy from template kept in UTILS package
+    my ($cref, $pmname) = @_;
+    my @progname_toks = split(/\//, $0);
+    pop @progname_toks;
+    my $progpath = join('/', @progname_toks);
+    my $fullname = $progpath . '/' . $pmname;
+    open(my $fh, "<$fullname") || die "non-existing file: $pmname\n";
+    return $fh;
+}

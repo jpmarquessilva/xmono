@@ -1,0 +1,60 @@
+Running ./scripts/monoxp on the following classifier & instance:
+    Desc file: ./bench/desc/auto-mpg.txt
+    Fmt file:  ./bench/spec/Auto-MPG/Auto-MPG.spec
+    Inst file: ./bench/inst/Auto-MPG/inst_0176.txt
+Additional options:  -t CMT -N all -m -w -s -v 10 
+Deciding whether to extract one AXp or one CXp
+Classif([1 8 318.0 150.0 3399.0 11.0 73])=28.0  => time: 2.6086049079895
+Classif([1 8 318.0 150.0 3399.0 11.0 73])=28.0  => time: 2.56991696357727
+Finding one AXp (w/ Univs: [])
+Classif([1 8 318.0 150.0 3399.0 11.0 73])=28.0  => time: 2.57410407066345
+Classif([3 8 318.0 150.0 3399.0 11.0 73])=28.0  => time: 2.5723569393158
+Classif([1 3 318.0 150.0 3399.0 11.0 73])=28.0  => time: 2.60129189491272
+Classif([3 8 318.0 150.0 3399.0 11.0 73])=28.0  => time: 2.61810898780823
+WARN: Corrected Classif[1 3 68.0 150.0 3399.0 11.0 73], from 36.0 to 28.0, due to [1 3 318.0 150.0 3399.0 11.0 73]
+Classif([1 3 68.0 150.0 3399.0 11.0 73])=28.0  => time: 2.80822396278381
+WARN: Corrected Classif[3 8 455.0 150.0 3399.0 11.0 73], from 24.0 to 28.0, due to [3 8 318.0 150.0 3399.0 11.0 73]
+Classif([3 8 455.0 150.0 3399.0 11.0 73])=28.0  => time: 3.266597032547
+WARN: Corrected Classif[1 3 68.0 46.0 3399.0 11.0 73], from 36.0 to 28.0, due to [1 3 68.0 150.0 3399.0 11.0 73]
+Classif([1 3 68.0 46.0 3399.0 11.0 73])=28.0  => time: 3.28053283691406
+WARN: Corrected Classif[3 8 455.0 230.0 3399.0 11.0 73], from 24.0 to 28.0, due to [3 8 455.0 150.0 3399.0 11.0 73]
+Classif([3 8 455.0 230.0 3399.0 11.0 73])=28.0  => time: 3.18209290504456
+Classif([1 3 68.0 46.0 1613.0 11.0 73])=16.0  => time: 2.97323894500732
+Classif([3 8 455.0 230.0 5140.0 11.0 73])=41.5  => time: 3.05112600326538
+WARN: Corrected Classif[1 3 68.0 46.0 3399.0 8.0 73], from 36.0 to 28.0, due to [1 3 68.0 46.0 3399.0 11.0 73]
+Classif([1 3 68.0 46.0 3399.0 8.0 73])=28.0  => time: 2.60755205154419
+WARN: Corrected Classif[3 8 455.0 230.0 3399.0 24.8 73], from 24.0 to 28.0, due to [3 8 455.0 230.0 3399.0 11.0 73]
+Classif([3 8 455.0 230.0 3399.0 24.8 73])=28.0  => time: 2.62504816055298
+WARN: Corrected Classif[1 3 68.0 46.0 3399.0 8.0 70], from 36.0 to 28.0, due to [1 3 68.0 46.0 3399.0 8.0 73]
+Classif([1 3 68.0 46.0 3399.0 8.0 70])=28.0  => time: 2.75212621688843
+WARN: Corrected Classif[3 8 455.0 230.0 3399.0 24.8 82], from 24.0 to 28.0, due to [3 8 455.0 230.0 3399.0 24.8 73]
+Classif([3 8 455.0 230.0 3399.0 24.8 82])=28.0  => time: 2.72969818115234
+AXp: 5
+Elapsed time:   44.824466 s
+Deciding whether to extract one AXp or one CXp
+Classif([1 8 318.0 150.0 1613.0 0 0])=10.0  => time: 2.84745216369629
+Classif([1 8 318.0 150.0 5140.0 0 0])=35.0  => time: 2.66754388809204
+Finding one CXp (w/ Fixes: [1 2 3 4])
+Classif([1 8 318.0 150.0 3399.0 0 0])=27.0  => time: 2.9242799282074
+Classif([1 8 318.0 150.0 3399.0 0 0])=27.0  => time: 2.62087512016296
+Classif([1 8 318.0 150.0 1613.0 11.0 0])=10.0  => time: 2.72085785865784
+Classif([1 8 318.0 150.0 5140.0 11.0 0])=39.0  => time: 2.71183204650879
+WARN: Corrected Classif[1 8 318.0 150.0 1613.0 11.0 73], from 9.0 to 16.0, due to [1 3 68.0 46.0 1613.0 11.0 73]
+Classif([1 8 318.0 150.0 1613.0 11.0 73])=16.0  => time: 2.60212087631226
+WARN: Corrected Classif[1 8 318.0 150.0 5140.0 11.0 73], from 46.6 to 41.5, due to [3 8 455.0 230.0 5140.0 11.0 73]
+Classif([1 8 318.0 150.0 5140.0 11.0 73])=41.5  => time: 2.59812307357788
+CXp: 5
+Elapsed time:   21.696326 s
+Total running time:   66.524324 s
+Summary of running ./scripts/monoxp
+Total number of explanations: 2
+Average explanation size:     1.00
+Total number of AXp's:        1
+Average AXp size:             1.00
+Total number of CXp's:        1
+Average CXp size:             1.00
+Number of SAT oracle calls:   3
+Total time in SAT oracle:     0.007992
+Number of classifier calls:   24
+Total time in classifier:     66.513705
+Number of prediction fixes:   10

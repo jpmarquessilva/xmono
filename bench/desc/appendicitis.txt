@@ -1,0 +1,15 @@
+name = appendicitis
+min_max_values = {'At1':[0.0,1.0],'At2':[0.0,1.0],'At3':[0.0,1.0],'At4':[0.0,1.0],'At5':[0.0,1.0],'At6':[0.0,1.0],'At7':[0.0,1.0]}
+feature_names = At1,At2,At3,At4,At5,At6,At7
+feature_types = Real,Real,Real,Real,Real,Real,Real
+is_classification = True
+model_dir = ./bench/models/Appendicitis/
+number_of_epochs = 10
+monotonic_indices = 0,1,2,3,4,5,6
+monotonicity_directions = 0
+model_parameters = { 'batch_size': 1, 'epochs': 100, 'lr': 0.01, 'layer_size': 3, 'hidden_size': 8}
+tmp_prefix = 
+scalability = False
+is_parallel = True
+solver_name = optimathsat
+solver = Solver_OptiMathSat

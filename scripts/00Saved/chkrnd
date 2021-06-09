@@ -1,0 +1,10 @@
+#!/usr/bin/perl
+
+my $valA = 3.4999999;
+my $rv = 0;
+my $valB = 3.5000001;
+
+$rv = sprintf("%.0f", $valA);
+print "$rv\n";
+$rv = sprintf("%.0f", $valB);
+print "$rv\n";

@@ -1,0 +1,20 @@
+#!/usr/bin/env perl
+
+die "Usage: $0 <colA> <colB> <file>\n" unless @ARGV == 3;
+my $colA = shift @ARGV;
+my $colB = shift @ARGV;
+
+while(<>) {
+    chomp;
+    my @toks = split(/,/);
+    ($toks[$colA], $toks[$colB]) = swap($toks[$colA], $toks[$colB]);
+    { $" = ','; print "@toks\n"; }
+}
+
+1;
+
+sub swap()
+{
+    my ($a, $b) = @_;
+    return ($b, $a);
+}

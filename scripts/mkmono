@@ -1,0 +1,175 @@
+#!/usr/bin/env perl
+
+use strict;
+use warnings;
+
+use constant DBG => 0;
+
+die "Usage: $0 <skip:0|1> <match:0|1> <head:0|1> <file>\n" unless @ARGV >= 4;
+my $skip = shift @ARGV;    # Skip 1st column
+my $match = shift @ARGV;   # Match pattern (@data) where data starts
+my $head = shift @ARGV;    # Filter out the first (head) line
+
+my @dataset = ();
+my $rmode = ($match == 0);
+my $tid = -1;
+while(<>) {
+    s/\r[\n]*/\n/gm;
+    chomp;
+    next if m/^\#.+/;
+    if ($rmode == 0) {
+        if (m/^\@data/) { $rmode = 1; }
+        next;
+    }
+    if ($head) { $head = 0; next; }
+    my @fs = split(/,/);
+    my $prd = pop @fs;
+    if ($skip) { $tid = shift @fs; }
+    my $ni = [ \@fs, $prd ];
+    if (DBG) { print "New instance: ([ @fs ], $prd)\n"; }
+    push @dataset, $ni;
+}
+my ($ds0, $ds1) = &split_instances(\@dataset);
+if (DBG) { print "\n\nDS0:\n"; &print_dset($ds0); }
+if (DBG) { print "\n\nDS1:\n"; &print_dset($ds1); }
+
+my ($mds0, $mds1) = ([], []);
+my ($p0ok, $p1ok) = (1, 1);
+while($p0ok || $p1ok) {
+    $p0ok = $p0ok && &pick_mono_subset($ds0, 0, $mds1, $mds0);
+    $p1ok = $p1ok && &pick_mono_subset($ds1, 1, $mds0, $mds1);
+}
+
+if (DBG) { print "\n\nMDS0:\n"; }
+&print_dset($mds0);
+if (DBG) { print "\n\nMDS1:\n"; }
+&print_dset($mds1);
+
+1;
+
+sub split_instances()
+{
+    my ($dset) = @_;
+    if (DBG) { print "Splitting...\n"; }
+    my ($ds0, $ds1) = ([], []);
+    foreach my $inst (@{$dset}) {
+        my ($fs, $prd) = @{$inst};
+        if ($prd > 0) { push @{$ds1}, $inst; }
+        else          { push @{$ds0}, $inst; }
+    }
+    if (DBG) { print "Done splitting...\n"; }
+    return ($ds0, $ds1);
+}
+
+# pmx=1: moving from set with prediction +1
+sub pick_mono_subset()
+{
+    my ($dsy, $pmx, $mdsz, $mdsy) = @_;
+    if (DBG) { print "Finding element to add to monotone set for $pmx...\n"; }
+    my $mx = -1;
+    my ($fsx, $prdx) = ([], 0);
+    for(my $j=0; $j<=$#{$dsy}; ++$j) {
+        my ($fsj, $prd) = @{${$dsy}[$j]};
+        if (($mx == -1 || $pmx && &gte($fsj, $fsx) || !$pmx && &gte($fsx, $fsj))
+            && &compatible($fsj, $pmx, $mdsz)) {
+            ($mx, $fsx, $prdx) = ($j, $fsj, $prd);
+            if (DBG) {
+                print "Updated idx:$mx for $pmx:\n";
+                &print_inst($fsx, $prdx); print "\n"; }
+        }
+    }
+    if ($mx > -1) {
+        if (DBG) {
+            print "Picked idx:$mx for $pmx:\n";
+            &print_inst($fsx, $prdx); print "\n"; }
+        push @{$mdsy}, [$fsx, $prdx];
+        ${$dsy}[$mx] = ${$dsy}[$#{$dsy}];
+        pop @{$dsy};
+    }
+    if (DBG) { print "Returning $mx...\n"; }
+    return ($mx > -1);
+}
+
+# pmx=1: moving from set with prediction +1
+sub compatible()
+{
+    my ($fs, $pmx, $mds) = @_;
+    my $fsok = 1;
+    for(my $k=0; $k<=$#{$mds}; ++$k) {
+        my ($fsk, $prd) = @{${$mds}[$k]};
+        #if (!($pmx && &gte($fs, $fsk) || !$pmx && &gte($fsk, $fs))) {
+        #if ((!$pmx || !&gte($fs, $fsk)) && ($pmx || !&gte($fsk, $fs))) {
+        #if ((!$pmx || !&gte($fs, $fsk)) && ($pmx || !&gte($fsk, $fs))) {
+        if (!$pmx && !&gte($fsk, $fs) || $pmx && !&gte($fs, $fsk)) {
+            if (DBG) {
+                print "Compatibility failed for $pmx: ";
+                &print_inst($fs, 'x'); print " vs. "; &print_inst($fsk, $prd);
+                print "\n";
+            }
+            $fsok = 0; last;
+        }
+    }
+    return $fsok;
+}
+
+sub gte()
+{
+    my ($v1, $v2) = @_;
+    die "Not same size @{$v1} vs. @{$v2}\n" unless $#{$v1} == $#{$v2};
+    my $gte = 1;
+    for (my $i=0; $i<=$#{$v1}; ++$i) {
+        if (${$v1}[$i] < ${$v2}[$i]) { $gte = 0; last; }
+    }
+    return $gte;
+}
+
+sub gt()
+{
+    my ($v1, $v2) = @_;
+    die "Not same size @{$v1} vs. @{$v2}\n" unless $#{$v1} == $#{$v2};
+    my $gt = 1;
+    for (my $i=0; $i<=$#{$v1}; ++$i) {
+        if (${$v1}[$i] <= ${$v2}[$i]) { $gt = 0; last; }
+    }
+    return $gt;
+}
+
+sub lte()
+{
+    my ($v1, $v2) = @_;
+    die "Not same size @{$v1} vs. @{$v2}\n" unless $#{$v1} == $#{$v2};
+    my $lte = 1;
+    for (my $i=0; $i<=$#{$v1}; ++$i) {
+        if (${$v1}[$i] > ${$v2}[$i]) { $lte = 0; last; }
+    }
+    return $lte;
+}
+
+sub lt()
+{
+    my ($v1, $v2) = @_;
+    die "Not same size @{$v1} vs. @{$v2}\n" unless $#{$v1} == $#{$v2};
+    my $lt = 1;
+    for (my $i=0; $i<=$#{$v1}; ++$i) {
+        if (${$v1}[$i] >= ${$v2}[$i]) { $lt = 0; last; }
+    }
+    return $lt;
+}
+
+sub print_dset()
+{
+    my ($mds) = @_;
+    foreach (my $i=0; $i<=$#{$mds}; ++$i) {
+        my ($fs, $prd) = @{${$mds}[$i]};
+        my $istr = join(',', @{$fs});
+        print "$istr,$prd\n";
+    }
+}
+
+sub print_inst()
+{
+    my ($fs, $prd) = @_;
+    my $istr = join(',', @{$fs});
+    print "$istr,$prd";
+}
+

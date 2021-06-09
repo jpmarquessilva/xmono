@@ -1,0 +1,67 @@
+Running ./scripts/monoxp on the following classifier & instance:
+    Fmt file:  ./bench/spec/StudentGrades/SG.txt
+    Inst file: ./bench/inst/StudentGrades/inst_0758.txt
+Additional options:  -t GRD -N all -w -s -v 10 
+Deciding whether to extract one AXp or one CXp
+Classif([10 2 4 2])=D
+Classif([10 2 4 2])=D
+Finding one AXp (w/ Univs: [])
+Classif([0 2 4 2])=E
+Classif([10 2 4 2])=D
+Classif([10 0 4 2])=E
+Classif([10 10 4 2])=A
+Classif([10 2 0 2])=D
+Classif([10 2 10 2])=C
+Classif([10 2 4 0])=D
+Classif([10 2 4 10])=A
+AXp: 1 2 3 4
+Elapsed time:   0.007274 s
+Deciding whether to extract one AXp or one CXp
+Classif([0 2 4 2])=E
+Classif([10 2 4 2])=D
+Finding one CXp (w/ Fixes: [2 3 4])
+Classif([10 2 4 2])=D
+Classif([10 2 4 2])=D
+CXp: 1
+Elapsed time:   0.007073 s
+Deciding whether to extract one AXp or one CXp
+Classif([10 2 4 0])=D
+Classif([10 2 4 10])=A
+Finding one CXp (w/ Fixes: [1 2 3])
+Classif([10 2 4 2])=D
+Classif([10 2 4 2])=D
+CXp: 4
+Elapsed time:   0.006787 s
+Deciding whether to extract one AXp or one CXp
+Classif([10 2 0 2])=D
+Classif([10 2 10 2])=C
+Finding one CXp (w/ Fixes: [1 2 4])
+Classif([10 2 4 2])=D
+Classif([10 2 4 2])=D
+CXp: 3
+Elapsed time:   0.006536 s
+Deciding whether to extract one AXp or one CXp
+Classif([10 0 4 2])=E
+Classif([10 10 4 2])=A
+Finding one CXp (w/ Fixes: [1 3 4])
+Classif([10 2 4 2])=D
+Classif([10 2 4 2])=D
+CXp: 2
+Elapsed time:   0.007252 s
+Total running time:   0.042785 s
+Summary of running ./scripts/monoxp
+Total number of explanations: 5
+Average explanation size:     1.60
+Total number of AXp's:        1
+Average AXp size:             4.00
+Total number of CXp's:        4
+Average CXp size:             1.00
+Number of SAT oracle calls:   6
+Total time in SAT oracle:     0.039022
+Number of classifier calls:   26
+Total time in classifier:     0.000182
+Number of prediction fixes:   0
+
+real	0m0.083s
+user	0m0.045s
+sys	0m0.026s

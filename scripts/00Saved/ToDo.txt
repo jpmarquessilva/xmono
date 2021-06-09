@@ -1,0 +1,25 @@
+
+[20210126]:
+
+- Implement tree classifier
+
+- Need spec files !!!
+
+
+[20210126]:
+
+- Experiments:                                                  ??
+  * 5 datasets (drop Heart, and drop Iris3)
+  * COMET (w/ enveloping)
+  * 10~50 AXp's/CXp's for each instance
+
+
+[20210124]:
+
+- Create instances from datasets                                ok
+
+- Create & update spec files                                    ok
+
+- Swap order of columns in Auto-MPG                             ok
+
+jpms

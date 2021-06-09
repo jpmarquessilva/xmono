@@ -1,0 +1,33 @@
+README
+======
+
+This archive contains several real-world datasets in ARFF format, kindly
+donated by Dr. Arie Ben David. You'll find more information about each
+dataset in the comment section in each file's header.
+
+The ARFF format is the dataset format used by WEKA, the "Waikato Environment
+for Knowledge Analysis" - a workbench for Machine Learning and Data Mining.
+
+You'll find more information on the WEKA homepage:
+    http://www.cs.waikato.ac.nz/~ml/weka/
+or on the Sourceforge site:
+    http://sourceforge.net/projects/weka/
+
+
+Donor:  Arie Ben David
+        MIS, Dept. of Technology Management 
+        Holon Academic Inst. of Technology
+        52 Golomb St.
+        Holon 58102
+        Israel
+        abendav@hait.ac.il
+        
+Owner:  Yoav Ganzah
+        Business Administration School
+        Tel Aviv Univerity
+        Ramat Aviv 69978
+        Israel
+
+
+FracPete, Hamilton/New Zealand, 2005-04-19
+

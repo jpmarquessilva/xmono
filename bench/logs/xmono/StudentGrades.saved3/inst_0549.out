@@ -1,0 +1,43 @@
+Running ./scripts/monoxp on the following classifier & instance:
+    Fmt file:  ./bench/spec/StudentGrades/SG.txt
+    Inst file: ./bench/inst/StudentGrades/inst_0549.txt
+Additional options:  -t GRD -N all -w -s -v 10 
+Deciding whether to extract one AXp or one CXp
+Classif([1 2 9 9])=A
+Classif([1 2 9 9])=A
+Finding one AXp (w/ Univs: [])
+Classif([0 2 9 9])=A
+Classif([10 2 9 9])=A
+Classif([0 0 9 9])=A
+Classif([10 10 9 9])=A
+Classif([0 0 0 9])=A
+Classif([10 10 10 9])=A
+Classif([0 0 0 0])=F
+Classif([10 10 10 10])=A
+AXp: 4
+Elapsed time:   0.006957 s
+Deciding whether to extract one AXp or one CXp
+Classif([1 2 9 0])=E
+Classif([1 2 9 10])=A
+Finding one CXp (w/ Fixes: [1 2 3])
+Classif([1 2 9 9])=A
+Classif([1 2 9 9])=A
+CXp: 4
+Elapsed time:   0.006892 s
+Total running time:   0.022000 s
+Summary of running ./scripts/monoxp
+Total number of explanations: 2
+Average explanation size:     1.00
+Total number of AXp's:        1
+Average AXp size:             1.00
+Total number of CXp's:        1
+Average CXp size:             1.00
+Number of SAT oracle calls:   3
+Total time in SAT oracle:     0.019680
+Number of classifier calls:   14
+Total time in classifier:     0.000068
+Number of prediction fixes:   0
+
+real	0m0.062s
+user	0m0.038s
+sys	0m0.017s

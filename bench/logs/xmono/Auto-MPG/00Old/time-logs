@@ -1,0 +1,694 @@
+root@5180be014518:/monoxp# ./scripts/runbench-monoxp 3
+Running monoxp on ./bench/inst/Auto-MPG/inst_0007.txt
+WARNING! DIMACS header mismatch: wrong number of variables.
+WARNING! DIMACS header mismatch: wrong number of variables.
+
+real	1m6.229s
+user	1m0.665s
+sys	0m13.212s
+Running monoxp on ./bench/inst/Auto-MPG/inst_0012.txt
+WARNING! DIMACS header mismatch: wrong number of variables.
+WARNING! DIMACS header mismatch: wrong number of variables.
+
+real	1m4.643s
+user	0m59.102s
+sys	0m13.100s
+Running monoxp on ./bench/inst/Auto-MPG/inst_0015.txt
+WARNING! DIMACS header mismatch: wrong number of variables.
+WARNING! DIMACS header mismatch: wrong number of variables.
+
+real	2m44.308s
+user	2m30.824s
+sys	0m31.892s
+Running monoxp on ./bench/inst/Auto-MPG/inst_0020.txt
+WARNING! DIMACS header mismatch: wrong number of variables.
+WARNING! DIMACS header mismatch: wrong number of variables.
+
+real	1m9.525s
+user	1m3.813s
+sys	0m13.320s
+Running monoxp on ./bench/inst/Auto-MPG/inst_0022.txt
+WARNING! DIMACS header mismatch: wrong number of variables.
+WARNING! DIMACS header mismatch: wrong number of variables.
+
+real	1m5.623s
+user	1m0.080s
+sys	0m13.137s
+Running monoxp on ./bench/inst/Auto-MPG/inst_0034.txt
+WARNING! DIMACS header mismatch: wrong number of variables.
+WARNING! DIMACS header mismatch: wrong number of variables.
+
+real	1m3.208s
+user	0m57.834s
+sys	0m12.968s
+Running monoxp on ./bench/inst/Auto-MPG/inst_0039.txt
+WARNING! DIMACS header mismatch: wrong number of variables.
+WARNING! DIMACS header mismatch: wrong number of variables.
+
+real	1m2.782s
+user	0m57.398s
+sys	0m12.963s
+Running monoxp on ./bench/inst/Auto-MPG/inst_0045.txt
+WARNING! DIMACS header mismatch: wrong number of variables.
+WARNING! DIMACS header mismatch: wrong number of variables.
+
+real	1m3.110s
+user	0m57.767s
+sys	0m12.935s
+Running monoxp on ./bench/inst/Auto-MPG/inst_0048.txt
+WARNING! DIMACS header mismatch: wrong number of variables.
+WARNING! DIMACS header mismatch: wrong number of variables.
+
+real	1m3.237s
+user	0m57.936s
+sys	0m12.834s
+Running monoxp on ./bench/inst/Auto-MPG/inst_0049.txt
+WARNING! DIMACS header mismatch: wrong number of variables.
+WARNING! DIMACS header mismatch: wrong number of variables.
+
+real	1m3.737s
+user	0m58.391s
+sys	0m12.963s
+Running monoxp on ./bench/inst/Auto-MPG/inst_0050.txt
+WARNING! DIMACS header mismatch: wrong number of variables.
+WARNING! DIMACS header mismatch: wrong number of variables.
+
+real	1m3.452s
+user	0m58.139s
+sys	0m12.908s
+Running monoxp on ./bench/inst/Auto-MPG/inst_0061.txt
+WARNING! DIMACS header mismatch: wrong number of variables.
+WARNING! DIMACS header mismatch: wrong number of variables.
+
+real	1m3.044s
+user	0m57.786s
+sys	0m12.802s
+Running monoxp on ./bench/inst/Auto-MPG/inst_0064.txt
+WARNING! DIMACS header mismatch: wrong number of variables.
+WARNING! DIMACS header mismatch: wrong number of variables.
+
+real	1m3.075s
+user	0m57.752s
+sys	0m12.949s
+Running monoxp on ./bench/inst/Auto-MPG/inst_0066.txt
+WARNING! DIMACS header mismatch: wrong number of variables.
+WARNING! DIMACS header mismatch: wrong number of variables.
+
+real	1m2.559s
+user	0m57.280s
+sys	0m12.800s
+Running monoxp on ./bench/inst/Auto-MPG/inst_0070.txt
+WARNING! DIMACS header mismatch: wrong number of variables.
+WARNING! DIMACS header mismatch: wrong number of variables.
+
+real	1m5.044s
+user	0m59.383s
+sys	0m13.287s
+Running monoxp on ./bench/inst/Auto-MPG/inst_0075.txt
+WARNING! DIMACS header mismatch: wrong number of variables.
+WARNING! DIMACS header mismatch: wrong number of variables.
+
+real	1m2.790s
+user	0m57.411s
+sys	0m12.877s
+Running monoxp on ./bench/inst/Auto-MPG/inst_0078.txt
+WARNING! DIMACS header mismatch: wrong number of variables.
+WARNING! DIMACS header mismatch: wrong number of variables.
+
+real	1m10.541s
+user	1m4.688s
+sys	0m13.371s
+Running monoxp on ./bench/inst/Auto-MPG/inst_0082.txt
+WARNING! DIMACS header mismatch: wrong number of variables.
+WARNING! DIMACS header mismatch: wrong number of variables.
+
+real	1m5.776s
+user	1m0.271s
+sys	0m13.173s
+Running monoxp on ./bench/inst/Auto-MPG/inst_0083.txt
+WARNING! DIMACS header mismatch: wrong number of variables.
+
+real	1m51.020s
+user	1m41.857s
+sys	0m21.815s
+Running monoxp on ./bench/inst/Auto-MPG/inst_0086.txt
+WARNING! DIMACS header mismatch: wrong number of variables.
+WARNING! DIMACS header mismatch: wrong number of variables.
+
+real	1m4.588s
+user	0m59.185s
+sys	0m13.029s
+Running monoxp on ./bench/inst/Auto-MPG/inst_0089.txt
+WARNING! DIMACS header mismatch: wrong number of variables.
+WARNING! DIMACS header mismatch: wrong number of variables.
+
+real	1m5.155s
+user	0m59.715s
+sys	0m12.997s
+Running monoxp on ./bench/inst/Auto-MPG/inst_0093.txt
+WARNING! DIMACS header mismatch: wrong number of variables.
+WARNING! DIMACS header mismatch: wrong number of variables.
+
+real	1m3.807s
+user	0m58.527s
+sys	0m12.902s
+Running monoxp on ./bench/inst/Auto-MPG/inst_0094.txt
+WARNING! DIMACS header mismatch: wrong number of variables.
+
+real	1m46.055s
+user	1m36.841s
+sys	0m21.853s
+Running monoxp on ./bench/inst/Auto-MPG/inst_0099.txt
+WARNING! DIMACS header mismatch: wrong number of variables.
+WARNING! DIMACS header mismatch: wrong number of variables.
+
+real	1m3.809s
+user	0m58.417s
+sys	0m13.005s
+Running monoxp on ./bench/inst/Auto-MPG/inst_0111.txt
+WARNING! DIMACS header mismatch: wrong number of variables.
+WARNING! DIMACS header mismatch: wrong number of variables.
+
+real	1m54.718s
+user	1m44.950s
+sys	0m23.666s
+Running monoxp on ./bench/inst/Auto-MPG/inst_0122.txt
+WARNING! DIMACS header mismatch: wrong number of variables.
+WARNING! DIMACS header mismatch: wrong number of variables.
+
+real	1m4.627s
+user	0m59.176s
+sys	0m13.070s
+Running monoxp on ./bench/inst/Auto-MPG/inst_0125.txt
+WARNING! DIMACS header mismatch: wrong number of variables.
+WARNING! DIMACS header mismatch: wrong number of variables.
+
+real	1m3.581s
+user	0m58.087s
+sys	0m13.050s
+Running monoxp on ./bench/inst/Auto-MPG/inst_0127.txt
+WARNING! DIMACS header mismatch: wrong number of variables.
+WARNING! DIMACS header mismatch: wrong number of variables.
+
+real	1m3.263s
+user	0m57.917s
+sys	0m12.921s
+Running monoxp on ./bench/inst/Auto-MPG/inst_0128.txt
+WARNING! DIMACS header mismatch: wrong number of variables.
+WARNING! DIMACS header mismatch: wrong number of variables.
+
+real	1m4.247s
+user	0m58.727s
+sys	0m13.079s
+Running monoxp on ./bench/inst/Auto-MPG/inst_0130.txt
+WARNING! DIMACS header mismatch: wrong number of variables.
+WARNING! DIMACS header mismatch: wrong number of variables.
+
+real	1m5.587s
+user	1m0.055s
+sys	0m13.073s
+Running monoxp on ./bench/inst/Auto-MPG/inst_0133.txt
+WARNING! DIMACS header mismatch: wrong number of variables.
+WARNING! DIMACS header mismatch: wrong number of variables.
+
+real	1m17.545s
+user	1m11.227s
+sys	0m13.961s
+Running monoxp on ./bench/inst/Auto-MPG/inst_0134.txt
+WARNING! DIMACS header mismatch: wrong number of variables.
+WARNING! DIMACS header mismatch: wrong number of variables.
+
+real	1m20.261s
+user	1m13.901s
+sys	0m13.903s
+Running monoxp on ./bench/inst/Auto-MPG/inst_0144.txt
+WARNING! DIMACS header mismatch: wrong number of variables.
+WARNING! DIMACS header mismatch: wrong number of variables.
+
+real	1m59.849s
+user	1m49.703s
+sys	0m24.084s
+Running monoxp on ./bench/inst/Auto-MPG/inst_0147.txt
+WARNING! DIMACS header mismatch: wrong number of variables.
+WARNING! DIMACS header mismatch: wrong number of variables.
+
+real	1m29.193s
+user	1m20.407s
+sys	0m15.811s
+Running monoxp on ./bench/inst/Auto-MPG/inst_0148.txt
+WARNING! DIMACS header mismatch: wrong number of variables.
+WARNING! DIMACS header mismatch: wrong number of variables.
+
+real	1m3.468s
+user	0m58.079s
+sys	0m12.903s
+Running monoxp on ./bench/inst/Auto-MPG/inst_0152.txt
+WARNING! DIMACS header mismatch: wrong number of variables.
+WARNING! DIMACS header mismatch: wrong number of variables.
+WARNING! DIMACS header mismatch: wrong number of variables.
+
+real	1m23.145s
+user	1m16.125s
+sys	0m17.172s
+Running monoxp on ./bench/inst/Auto-MPG/inst_0154.txt
+WARNING! DIMACS header mismatch: wrong number of variables.
+WARNING! DIMACS header mismatch: wrong number of variables.
+
+real	1m5.583s
+user	1m0.195s
+sys	0m13.016s
+Running monoxp on ./bench/inst/Auto-MPG/inst_0155.txt
+WARNING! DIMACS header mismatch: wrong number of variables.
+WARNING! DIMACS header mismatch: wrong number of variables.
+
+real	1m5.028s
+user	0m59.479s
+sys	0m13.196s
+Running monoxp on ./bench/inst/Auto-MPG/inst_0156.txt
+WARNING! DIMACS header mismatch: wrong number of variables.
+WARNING! DIMACS header mismatch: wrong number of variables.
+
+real	1m4.315s
+user	0m58.786s
+sys	0m13.031s
+Running monoxp on ./bench/inst/Auto-MPG/inst_0157.txt
+WARNING! DIMACS header mismatch: wrong number of variables.
+WARNING! DIMACS header mismatch: wrong number of variables.
+
+real	1m4.839s
+user	0m59.253s
+sys	0m13.241s
+Running monoxp on ./bench/inst/Auto-MPG/inst_0160.txt
+WARNING! DIMACS header mismatch: wrong number of variables.
+
+real	1m44.227s
+user	1m35.461s
+sys	0m21.457s
+Running monoxp on ./bench/inst/Auto-MPG/inst_0163.txt
+WARNING! DIMACS header mismatch: wrong number of variables.
+WARNING! DIMACS header mismatch: wrong number of variables.
+
+real	1m2.648s
+user	0m57.404s
+sys	0m12.814s
+Running monoxp on ./bench/inst/Auto-MPG/inst_0167.txt
+WARNING! DIMACS header mismatch: wrong number of variables.
+WARNING! DIMACS header mismatch: wrong number of variables.
+
+real	1m2.654s
+user	0m57.368s
+sys	0m12.875s
+Running monoxp on ./bench/inst/Auto-MPG/inst_0168.txt
+WARNING! DIMACS header mismatch: wrong number of variables.
+WARNING! DIMACS header mismatch: wrong number of variables.
+
+real	1m2.569s
+user	0m57.189s
+sys	0m13.034s
+Running monoxp on ./bench/inst/Auto-MPG/inst_0173.txt
+WARNING! DIMACS header mismatch: wrong number of variables.
+WARNING! DIMACS header mismatch: wrong number of variables.
+
+real	1m2.648s
+user	0m57.417s
+sys	0m12.797s
+Running monoxp on ./bench/inst/Auto-MPG/inst_0176.txt
+WARNING! DIMACS header mismatch: wrong number of variables.
+WARNING! DIMACS header mismatch: wrong number of variables.
+
+real	1m2.425s
+user	0m57.101s
+sys	0m13.070s
+Running monoxp on ./bench/inst/Auto-MPG/inst_0177.txt
+WARNING! DIMACS header mismatch: wrong number of variables.
+WARNING! DIMACS header mismatch: wrong number of variables.
+
+real	1m2.565s
+user	0m57.196s
+sys	0m12.950s
+Running monoxp on ./bench/inst/Auto-MPG/inst_0180.txt
+WARNING! DIMACS header mismatch: wrong number of variables.
+WARNING! DIMACS header mismatch: wrong number of variables.
+
+real	2m30.997s
+user	2m18.175s
+sys	0m31.144s
+Running monoxp on ./bench/inst/Auto-MPG/inst_0190.txt
+WARNING! DIMACS header mismatch: wrong number of variables.
+
+real	1m44.098s
+user	1m35.050s
+sys	0m21.702s
+Running monoxp on ./bench/inst/Auto-MPG/inst_0191.txt
+WARNING! DIMACS header mismatch: wrong number of variables.
+WARNING! DIMACS header mismatch: wrong number of variables.
+
+real	1m2.487s
+user	0m57.004s
+sys	0m13.064s
+Running monoxp on ./bench/inst/Auto-MPG/inst_0192.txt
+WARNING! DIMACS header mismatch: wrong number of variables.
+WARNING! DIMACS header mismatch: wrong number of variables.
+
+real	1m4.534s
+user	0m59.087s
+sys	0m13.103s
+Running monoxp on ./bench/inst/Auto-MPG/inst_0204.txt
+WARNING! DIMACS header mismatch: wrong number of variables.
+WARNING! DIMACS header mismatch: wrong number of variables.
+
+real	1m3.748s
+user	0m58.245s
+sys	0m13.181s
+Running monoxp on ./bench/inst/Auto-MPG/inst_0210.txt
+WARNING! DIMACS header mismatch: wrong number of variables.
+WARNING! DIMACS header mismatch: wrong number of variables.
+
+real	1m9.738s
+user	1m4.058s
+sys	0m13.303s
+Running monoxp on ./bench/inst/Auto-MPG/inst_0213.txt
+WARNING! DIMACS header mismatch: wrong number of variables.
+WARNING! DIMACS header mismatch: wrong number of variables.
+
+real	1m4.386s
+user	0m58.966s
+sys	0m13.025s
+Running monoxp on ./bench/inst/Auto-MPG/inst_0214.txt
+WARNING! DIMACS header mismatch: wrong number of variables.
+WARNING! DIMACS header mismatch: wrong number of variables.
+
+real	1m2.616s
+user	0m57.255s
+sys	0m12.955s
+Running monoxp on ./bench/inst/Auto-MPG/inst_0216.txt
+WARNING! DIMACS header mismatch: wrong number of variables.
+WARNING! DIMACS header mismatch: wrong number of variables.
+
+real	1m54.998s
+user	1m45.197s
+sys	0m23.775s
+Running monoxp on ./bench/inst/Auto-MPG/inst_0219.txt
+WARNING! DIMACS header mismatch: wrong number of variables.
+WARNING! DIMACS header mismatch: wrong number of variables.
+
+real	1m2.395s
+user	0m57.106s
+sys	0m12.919s
+Running monoxp on ./bench/inst/Auto-MPG/inst_0221.txt
+WARNING! DIMACS header mismatch: wrong number of variables.
+WARNING! DIMACS header mismatch: wrong number of variables.
+
+real	1m2.488s
+user	0m57.206s
+sys	0m12.812s
+Running monoxp on ./bench/inst/Auto-MPG/inst_0227.txt
+WARNING! DIMACS header mismatch: wrong number of variables.
+WARNING! DIMACS header mismatch: wrong number of variables.
+
+real	1m2.537s
+user	0m57.209s
+sys	0m12.856s
+Running monoxp on ./bench/inst/Auto-MPG/inst_0229.txt
+WARNING! DIMACS header mismatch: wrong number of variables.
+WARNING! DIMACS header mismatch: wrong number of variables.
+
+real	1m2.382s
+user	0m57.093s
+sys	0m12.863s
+Running monoxp on ./bench/inst/Auto-MPG/inst_0231.txt
+WARNING! DIMACS header mismatch: wrong number of variables.
+WARNING! DIMACS header mismatch: wrong number of variables.
+
+real	1m2.774s
+user	0m57.401s
+sys	0m12.979s
+Running monoxp on ./bench/inst/Auto-MPG/inst_0232.txt
+WARNING! DIMACS header mismatch: wrong number of variables.
+WARNING! DIMACS header mismatch: wrong number of variables.
+
+real	1m2.523s
+user	0m57.142s
+sys	0m12.909s
+Running monoxp on ./bench/inst/Auto-MPG/inst_0235.txt
+WARNING! DIMACS header mismatch: wrong number of variables.
+WARNING! DIMACS header mismatch: wrong number of variables.
+
+real	1m2.379s
+user	0m56.945s
+sys	0m13.079s
+Running monoxp on ./bench/inst/Auto-MPG/inst_0236.txt
+WARNING! DIMACS header mismatch: wrong number of variables.
+WARNING! DIMACS header mismatch: wrong number of variables.
+
+real	1m2.370s
+user	0m57.019s
+sys	0m12.926s
+Running monoxp on ./bench/inst/Auto-MPG/inst_0238.txt
+WARNING! DIMACS header mismatch: wrong number of variables.
+WARNING! DIMACS header mismatch: wrong number of variables.
+
+real	1m54.466s
+user	1m44.594s
+sys	0m23.748s
+Running monoxp on ./bench/inst/Auto-MPG/inst_0240.txt
+WARNING! DIMACS header mismatch: wrong number of variables.
+WARNING! DIMACS header mismatch: wrong number of variables.
+
+real	1m2.438s
+user	0m57.170s
+sys	0m12.791s
+Running monoxp on ./bench/inst/Auto-MPG/inst_0244.txt
+WARNING! DIMACS header mismatch: wrong number of variables.
+WARNING! DIMACS header mismatch: wrong number of variables.
+
+real	1m2.486s
+user	0m57.264s
+sys	0m12.920s
+Running monoxp on ./bench/inst/Auto-MPG/inst_0248.txt
+WARNING! DIMACS header mismatch: wrong number of variables.
+WARNING! DIMACS header mismatch: wrong number of variables.
+
+real	1m2.325s
+user	0m57.210s
+sys	0m12.817s
+Running monoxp on ./bench/inst/Auto-MPG/inst_0251.txt
+WARNING! DIMACS header mismatch: wrong number of variables.
+WARNING! DIMACS header mismatch: wrong number of variables.
+
+real	1m2.448s
+user	0m57.243s
+sys	0m12.752s
+Running monoxp on ./bench/inst/Auto-MPG/inst_0254.txt
+WARNING! DIMACS header mismatch: wrong number of variables.
+WARNING! DIMACS header mismatch: wrong number of variables.
+
+real	1m2.488s
+user	0m57.233s
+sys	0m12.780s
+Running monoxp on ./bench/inst/Auto-MPG/inst_0262.txt
+WARNING! DIMACS header mismatch: wrong number of variables.
+WARNING! DIMACS header mismatch: wrong number of variables.
+
+real	1m2.381s
+user	0m57.003s
+sys	0m13.001s
+Running monoxp on ./bench/inst/Auto-MPG/inst_0263.txt
+WARNING! DIMACS header mismatch: wrong number of variables.
+WARNING! DIMACS header mismatch: wrong number of variables.
+
+real	1m2.522s
+user	0m57.228s
+sys	0m12.866s
+Running monoxp on ./bench/inst/Auto-MPG/inst_0267.txt
+WARNING! DIMACS header mismatch: wrong number of variables.
+
+real	1m54.298s
+user	1m44.665s
+sys	0m23.477s
+Running monoxp on ./bench/inst/Auto-MPG/inst_0269.txt
+WARNING! DIMACS header mismatch: wrong number of variables.
+WARNING! DIMACS header mismatch: wrong number of variables.
+
+real	1m3.122s
+user	0m57.638s
+sys	0m12.967s
+Running monoxp on ./bench/inst/Auto-MPG/inst_0275.txt
+WARNING! DIMACS header mismatch: wrong number of variables.
+
+real	2m8.838s
+user	1m57.864s
+sys	0m26.085s
+Running monoxp on ./bench/inst/Auto-MPG/inst_0277.txt
+WARNING! DIMACS header mismatch: wrong number of variables.
+WARNING! DIMACS header mismatch: wrong number of variables.
+
+real	1m10.101s
+user	1m4.309s
+sys	0m13.411s
+Running monoxp on ./bench/inst/Auto-MPG/inst_0278.txt
+WARNING! DIMACS header mismatch: wrong number of variables.
+WARNING! DIMACS header mismatch: wrong number of variables.
+
+real	1m11.283s
+user	1m5.249s
+sys	0m13.662s
+Running monoxp on ./bench/inst/Auto-MPG/inst_0288.txt
+WARNING! DIMACS header mismatch: wrong number of variables.
+WARNING! DIMACS header mismatch: wrong number of variables.
+
+real	1m7.313s
+user	1m1.785s
+sys	0m13.178s
+Running monoxp on ./bench/inst/Auto-MPG/inst_0294.txt
+WARNING! DIMACS header mismatch: wrong number of variables.
+WARNING! DIMACS header mismatch: wrong number of variables.
+
+real	1m7.166s
+user	1m1.532s
+sys	0m13.332s
+Running monoxp on ./bench/inst/Auto-MPG/inst_0296.txt
+WARNING! DIMACS header mismatch: wrong number of variables.
+WARNING! DIMACS header mismatch: wrong number of variables.
+
+real	1m7.435s
+user	1m1.906s
+sys	0m13.268s
+Running monoxp on ./bench/inst/Auto-MPG/inst_0307.txt
+WARNING! DIMACS header mismatch: wrong number of variables.
+
+real	2m18.794s
+user	2m7.105s
+sys	0m27.023s
+Running monoxp on ./bench/inst/Auto-MPG/inst_0309.txt
+WARNING! DIMACS header mismatch: wrong number of variables.
+WARNING! DIMACS header mismatch: wrong number of variables.
+
+real	1m11.402s
+user	1m5.453s
+sys	0m13.465s
+Running monoxp on ./bench/inst/Auto-MPG/inst_0316.txt
+WARNING! DIMACS header mismatch: wrong number of variables.
+WARNING! DIMACS header mismatch: wrong number of variables.
+
+real	1m14.886s
+user	1m8.615s
+sys	0m13.762s
+Running monoxp on ./bench/inst/Auto-MPG/inst_0322.txt
+WARNING! DIMACS header mismatch: wrong number of variables.
+WARNING! DIMACS header mismatch: wrong number of variables.
+
+real	1m7.025s
+user	1m1.404s
+sys	0m13.338s
+Running monoxp on ./bench/inst/Auto-MPG/inst_0328.txt
+WARNING! DIMACS header mismatch: wrong number of variables.
+WARNING! DIMACS header mismatch: wrong number of variables.
+
+real	1m12.531s
+user	1m6.444s
+sys	0m13.616s
+Running monoxp on ./bench/inst/Auto-MPG/inst_0332.txt
+WARNING! DIMACS header mismatch: wrong number of variables.
+WARNING! DIMACS header mismatch: wrong number of variables.
+
+real	1m3.398s
+user	0m58.108s
+sys	0m12.957s
+Running monoxp on ./bench/inst/Auto-MPG/inst_0342.txt
+WARNING! DIMACS header mismatch: wrong number of variables.
+WARNING! DIMACS header mismatch: wrong number of variables.
+
+real	1m2.120s
+user	0m56.810s
+sys	0m12.897s
+Running monoxp on ./bench/inst/Auto-MPG/inst_0345.txt
+WARNING! DIMACS header mismatch: wrong number of variables.
+WARNING! DIMACS header mismatch: wrong number of variables.
+
+real	1m1.456s
+user	0m56.188s
+sys	0m12.931s
+Running monoxp on ./bench/inst/Auto-MPG/inst_0351.txt
+WARNING! DIMACS header mismatch: wrong number of variables.
+WARNING! DIMACS header mismatch: wrong number of variables.
+
+real	1m2.788s
+user	0m57.325s
+sys	0m13.037s
+Running monoxp on ./bench/inst/Auto-MPG/inst_0352.txt
+WARNING! DIMACS header mismatch: wrong number of variables.
+WARNING! DIMACS header mismatch: wrong number of variables.
+
+real	15m40.501s
+user	1m1.216s
+sys	0m13.404s
+Running monoxp on ./bench/inst/Auto-MPG/inst_0358.txt
+WARNING! DIMACS header mismatch: wrong number of variables.
+WARNING! DIMACS header mismatch: wrong number of variables.
+
+real	1m2.440s
+user	0m57.123s
+sys	0m12.909s
+Running monoxp on ./bench/inst/Auto-MPG/inst_0362.txt
+WARNING! DIMACS header mismatch: wrong number of variables.
+WARNING! DIMACS header mismatch: wrong number of variables.
+
+real	1m2.070s
+user	0m56.750s
+sys	0m12.938s
+Running monoxp on ./bench/inst/Auto-MPG/inst_0364.txt
+WARNING! DIMACS header mismatch: wrong number of variables.
+WARNING! DIMACS header mismatch: wrong number of variables.
+
+real	1m2.060s
+user	0m56.772s
+sys	0m12.912s
+Running monoxp on ./bench/inst/Auto-MPG/inst_0368.txt
+WARNING! DIMACS header mismatch: wrong number of variables.
+WARNING! DIMACS header mismatch: wrong number of variables.
+
+real	1m39.741s
+user	1m1.917s
+sys	0m13.303s
+Running monoxp on ./bench/inst/Auto-MPG/inst_0374.txt
+WARNING! DIMACS header mismatch: wrong number of variables.
+WARNING! DIMACS header mismatch: wrong number of variables.
+
+real	1m13.536s
+user	1m7.091s
+sys	0m13.749s
+Running monoxp on ./bench/inst/Auto-MPG/inst_0376.txt
+WARNING! DIMACS header mismatch: wrong number of variables.
+WARNING! DIMACS header mismatch: wrong number of variables.
+
+real	1m4.160s
+user	0m58.810s
+sys	0m12.976s
+Running monoxp on ./bench/inst/Auto-MPG/inst_0380.txt
+WARNING! DIMACS header mismatch: wrong number of variables.
+WARNING! DIMACS header mismatch: wrong number of variables.
+
+real	1m4.287s
+user	0m58.791s
+sys	0m13.103s
+Running monoxp on ./bench/inst/Auto-MPG/inst_0385.txt
+WARNING! DIMACS header mismatch: wrong number of variables.
+WARNING! DIMACS header mismatch: wrong number of variables.
+
+real	1m2.819s
+user	0m57.478s
+sys	0m12.928s
+Running monoxp on ./bench/inst/Auto-MPG/inst_0387.txt
+WARNING! DIMACS header mismatch: wrong number of variables.
+WARNING! DIMACS header mismatch: wrong number of variables.
+
+real	1m2.841s
+user	0m57.519s
+sys	0m12.925s
+Running monoxp on ./bench/inst/Auto-MPG/inst_0390.txt
+WARNING! DIMACS header mismatch: wrong number of variables.
+
+real	2m5.133s
+user	1m54.557s
+sys	0m25.832s

@@ -1,0 +1,9 @@
+7
+Origin
+Cylinders
+Displacement
+Horsepower
+Weight
+Acceleration
+Model Year
+MPG

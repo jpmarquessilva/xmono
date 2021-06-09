@@ -1,0 +1,78 @@
+#!/usr/bin/env perl
+
+use strict;
+use warnings;
+
+die "Usage: $0 <anchor-file> <file1> <file2> ...\n" unless @ARGV > 2;
+
+my @anchors = ();
+my $anchorf = shift @ARGV;
+my $xpnum = 0;
+open(my $fh, "<$anchorf") || die "Unable to open file $anchorf.";
+while(<$fh>) {
+    chomp;
+    if (m/^Anchor explanation:\s+\[([^\]]+)\]/) {
+    #if (m/^\s*anchor features:\s+\[([^\]]+)\]/) {
+        my @lits = split(/,/, $1);
+        my $xp = [];
+        foreach my $lit (sort {$a<=>$b} @lits) { push @{$xp}, $lit+1; }
+        $xpnum++;
+        push @anchors, $xp;
+    }
+}
+close($fh);
+
+my @axps = ();
+my $xpid = 0;
+my $axperr = 0;
+my $oldargv = '';
+my $frst = 1;
+while(<>) {
+    chomp;
+    if ($ARGV ne $oldargv) {
+        $oldargv = $ARGV;
+        if ($frst) { $frst = 0; next; }
+        my $axpok = &chkaxp(\@anchors, \@axps, $xpid);
+        if (!$axpok) { ++$axperr; }
+        @axps = (); ++$xpid;
+    }
+    if (m/AXp:\s+(\d[\d\s]*)/) {
+        my @lits = split(/ +/, $1);
+        my $axp = [ sort {$a<=>$b} @lits ];
+        ##print "xpid:$xpid    axps:@{$axp}\n";
+        push @axps, $axp;
+    }
+}
+
+my $axpok = &chkaxp(\@anchors, \@axps, $xpid);
+if (!$axpok) { ++$axperr; }
+
+my $prtstr = sprintf("%4.3f", $axperr/$xpnum);
+print "Fraction of diffs: $prtstr\n";
+
+1;
+
+sub chkaxp()
+{
+    my ($anchors, $axps, $xpid) = @_;
+
+    my $diff = 1;
+    foreach my $axp (@axps) {
+        $diff = 0;
+        for(my $i=0; $i<=$#{${$anchors}[$xpid]}; ++$i) {
+            if ($i > $#{$axp} || ${$axp}[$i] != ${${$anchors}[$xpid]}[$i]) {
+                $diff = 1; last;
+            }
+        }
+        if (!$diff) { last; }
+    }
+    if ($diff) {
+        print "Anchor: @{${$anchors}[$xpid]} not matched with ";
+        foreach (my $j=0; $j<=$#{$axps}; ++$j) { print "@{${$axps}[$j]} ; "; }
+        print "\n";
+    }
+    else {
+        print "Anchor: @{${$anchors}[$xpid]} OK\n";
+    }
+    return !$diff;
+}

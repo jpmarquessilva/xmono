@@ -1,0 +1,63 @@
+#!/usr/bin/env perl
+
+use strict;
+use warnings;
+
+use constant DBG => 0;
+
+die "Usage: $0 <skip:0|1> <match:0|1> <head:0|1> <file>\n" unless @ARGV >= 4;
+my $skip = shift @ARGV;    # Skip 1st column
+my $match = shift @ARGV;   # Match pattern (@data) where data starts
+my $head = shift @ARGV;    # Filter out the first (head) line
+
+my @dataset = ();
+my $rmode = ($match == 0);
+my $tid = -1;
+while(<>) {
+    s/\r[\n]*/\n/gm;
+    chomp;
+    next if m/^\#.+/;
+    if ($rmode == 0) {
+        if (m/^\@data/) { $rmode = 1; }
+        next;
+    }
+    if ($head) { $head = 0; next; }
+    my @fs = split(/,/);
+    my $prd = pop @fs;
+    if ($skip) { $tid = shift @fs; }
+    my $ni = [ \@fs, $prd ];
+    if (DBG) { print "New instance: ([ @fs ], $prd)\n"; }
+    foreach my $inst (@dataset) {
+        my ($rfs, $rprd) = @{$inst};
+        if (DBG) { print "Cmp against ([ @{$rfs} ], $rprd)\n"; }
+        my $mok = &chk_mono($ni, $inst);
+        if (!$mok) {
+            my $msgprf = "Monotonicity fails for: ";
+            print ("$msgprf([ @fs ], $prd) vs ([ @{$rfs} ], $rprd)");
+            if ($tid > 0) { print "for instance: $tid"; }
+            print "\n";
+        }
+    }
+    push @dataset, $ni;
+}
+
+1;
+
+sub chk_mono()
+{
+    my ($inst1, $inst2) = @_;
+    my ($v1, $p1) = @{$inst1};
+    my ($v2, $p2) = @{$inst2};
+    return !(&gte($v1, $v2) && $p1 < $p2 || &gte($v2, $v1) && $p2 < $p1);
+}
+
+sub gte()
+{
+    my ($v1, $v2) = @_;
+    die "Not same size @{$v1} vs. @{$v2}\n" unless $#{$v1} == $#{$v2};
+    my $gte = 1;
+    for (my $i=0; $i<=$#{$v1}; ++$i) {
+        if (${$v1}[$i] < ${$v2}[$i]) { $gte = 0; last; }
+    }
+    return $gte;
+}

@@ -1,0 +1,251 @@
+#!/usr/bin/env perl
+
+## Tool for computing explanations of monotonic classifiers.
+
+## To run the tool:
+## <script-name> [-h] [-d] [-v <VVV>] [-S] [-s] [-k <KKK>] [-p <prt-file>] [-m] [-w | -l] [-A | -C | -N <NNN> | -V] [-c <config-file>]  -f <fmt-file> -i <inst-file> -t CMT|MBT|RDT|GRD
+
+push @INC, \&resolve_inc;
+
+use strict;
+use warnings;
+
+use POSIX qw( !assert );
+
+use Getopt::Std;
+use List::Util qw(sum0); ##qw( max min sum sum0);
+
+require Utils;  # Must use require, to get INC updated
+import Utils qw( &assert &mark_curr_time &read_elapsed_time );
+
+use constant DBG => 1;   ## Also, comment out unused 'uses'
+use constant CHK => 1;
+
+require Parsers;
+import Parsers qw( parse_spec parse_instance );
+
+require Writers;
+import Writers qw( write_xp write_digest write_digest_int );
+
+require MonoXPs;
+import MonoXPs
+    qw( compute_one_axp compute_one_cxp compute_xps
+    set_def_vect validate_prediction update_stats init_stats );
+
+# 0a. Set time
+my $rtime = &mark_curr_time();
+
+# 0b. Read command line arguments
+my %opts = ();
+&read_opts(\%opts);
+
+if (defined($opts{p})) {
+    open ($opts{FH}, '>', $opts{p});
+    select($opts{FH});
+}
+
+# 1a. Data structures
+my %mxp = ();
+my %inst = ();
+my %stats = ();
+
+
+# 1b. Prepare interrupts
+if ($opts{S}) {    # If catching system signals
+    &Utils::register_handlers();
+    if ($opts{s}) {
+        &Utils::push_arg(\%opts);
+        &Utils::push_arg(\%mxp);
+        &Utils::push_arg(\%stats);
+        &Utils::push_callback(\&write_digest_int);
+    }
+}
+
+
+# 2a. Read monotonic classifier desc/spec
+&parse_spec(\%opts, \%mxp, $opts{f});
+if (DBG && $opts{d}) { print Data::Dumper->Dump([ \%mxp ], [ qw(mxp) ]); }
+
+# 2b. Read instance
+&parse_instance(\%opts, \%inst, $opts{i});
+&set_def_vect(\%opts, \%mxp, \%inst);
+if ($opts{s}) { &init_stats(\%opts, \%stats); }
+if ($opts{V} || CHK && $opts{k}) {
+    &validate_prediction(\%opts, \%stats, \%mxp, \%inst);
+    if ($opts{V}) { exit; }
+}
+if (DBG && $opts{d}) { print Data::Dumper->Dump([ \%inst ], [ qw(inst) ]); }
+
+
+# 3. Pick action to execute:
+if ($opts{A}) {
+    # 3.1 Either compute 1 AXp
+    my $rtime = &mark_curr_time();
+    my $xp = &compute_one_axp(\%opts, \%mxp, \%stats, 0);
+    if ($opts{w} || $opts{l}) { &write_xp(\%opts, \%mxp, $xp, 'AXp'); }
+    if ($opts{s}) { &update_stats(\%opts, \%stats, $xp, 'AXp'); }
+    if (defined($opts{v}) && $opts{v} > 1) {
+        my $elapsed = &read_elapsed_time($rtime);
+        my $ptime = sprintf("%7.6f", $elapsed);
+        print "Explanation elapsed time:   $ptime s\n";
+    }
+}
+elsif ($opts{C}) {
+    # 3.2 Or compute 1 CXp
+    my $rtime = &mark_curr_time();
+    my $xp = &compute_one_cxp(\%opts, \%mxp, \%stats, 0);
+    if ($opts{w} || $opts{l}) { &write_xp(\%opts, \%mxp, $xp, 'CXp'); }
+    if ($opts{s}) { &update_stats(\%opts, \%stats, $xp, 'CXp'); }
+    if (defined($opts{v}) && $opts{v} > 1) {
+        my $elapsed = &read_elapsed_time($rtime);
+        my $ptime = sprintf("%7.6f", $elapsed);
+        print "Explanation elapsed time:   $ptime s\n";
+    }
+}
+else { ##if ($opts{N})
+    # 3.3 Or compute some|all AXp's/CXp's
+    &compute_xps(\%opts, \%mxp, \%stats);
+}
+if (defined($opts{v})) {
+    my $elapsed = &read_elapsed_time($rtime);
+    my $ptime = sprintf("%7.6f", $elapsed);
+    print "Total running time:   $ptime s\n";
+}
+if ($opts{s}) {
+    &write_digest(\%opts, \%mxp, \%stats);
+}
+
+1;
+
+
+# Helpers
+# ...
+
+# Utilities
+
+sub read_opts()
+{
+    my ($opts) = @_;
+    getopts("hdv:Ssk:p:mwlACN:Vt:c:i:f:", $opts);
+
+    if ($opts->{h}) {
+        &prt_help();
+    }
+    elsif (!defined($opts->{t}) || !defined($opts->{i}) ||
+           !defined($opts->{f}) ||
+           $opts->{t} eq 'CMT]' && !defined($opts->{c}) ||
+           defined($opts->{A}) && defined($opts->{C}) ||
+           defined($opts->{A}) && defined($opts->{N}) ||
+           defined($opts->{A}) && defined($opts->{V}) ||
+           defined($opts->{C}) && defined($opts->{N}) ||
+           defined($opts->{C}) && defined($opts->{V}) ||
+           defined($opts->{N}) && defined($opts->{V}) ||
+           defined($opts->{w}) && defined($opts->{l})) {
+        die "Usage: $0 [-h] [-d] [-v <VVV>] [-S] [-s] [-k <KKK>] [-p <prt-file>] [-m] [-w | -l] [-A | -C | -N <NNN> | -V] [-c <config-file>] -f <fmt-file> -i <inst-file> -t CMT|MBT|RDT|GRD\n" ;
+    }
+    if ($opts->{v} >= 1) { &prt_runtime_cfg($opts); }
+}
+
+sub prt_help()
+{
+    my $tname = &toolname($0);
+    print <<"EOF";
+$tname: Compute explanations of monotonic classifiers
+Usage:  $tname [-h] [-d] [-v <VVV>] [-S] [-s] [-k <KKK>] [-p <prt-file>] [-m] [-w | -l] [-A | -C | -N <NNN> | -V] [-c <cfg-file>] -f <fmt-file> -i <inst-file>  -t CMT|RDT|GRD
+     -f <fmt-file>  specification of input features and classes (fmt)
+     -i <inst-file> specification of instance
+     -c <cfg-gfile> config file used to invoke the monotonic classifier
+     -t CMT|MBT|RDT|GRD select classifier to use
+     -A             compute *1* abductive explanation
+     -C             compute *1* contrastive explanation
+     -N <NNN>       number of NNN explanations to list (the default is all)
+     -V             simply validate instance's prediction (and exit)
+     -w             write computed explanations (as features id's)
+     -l             write computed explanations (as literals)
+     -m             enforce monotonicity (in case classifier outputs outliers)
+     -p <prt-file>  print to file
+     -k <KKK>       apply consistency checks & issue warnings (1) or exit (>1)
+     -s             gather stats on computed explanations
+     -S             enable catching system signals
+     -v <VVV>       verbosity level
+     -d             debug mode
+     -h             prints this help
+    Author:   joao.marques-silva\@irit.fr
+EOF
+    exit();
+}
+
+sub prt_runtime_cfg()
+{
+    my ($opts) = @_;
+    print "Running $0 on the following classifier & instance:\n";
+    if (defined($opts->{c})) {
+        print "    Desc file: $opts->{c}\n";
+    }
+    print "    Fmt file:  $opts->{f}\n";
+    print "    Inst file: $opts->{i}\n";
+    print "Additional options:  ";
+
+    if (defined($opts->{t})) { print "-t $opts->{t} "; }
+
+    if (defined($opts->{A})) { print "-A "; }
+    elsif (defined($opts->{C})) { print "-C "; }
+    elsif (defined($opts->{V})) { print "-V "; }
+    elsif (defined($opts->{N})) { print "-N $opts->{N} "; }
+    else                        { print "-N all "; }
+
+    if (defined($opts->{m}))    { print "-m "; }
+
+    if (defined($opts->{w}))    { print "-w "; }
+    elsif (defined($opts->{l})) { print "-l "; }
+
+    if (defined($opts->{s}))    { print "-s "; }
+    if (defined($opts->{S}))    { print "-S "; }
+    if (defined($opts->{p}))    { print "-p $opts->{p} "; }
+    if (defined($opts->{v}))    { print "-v $opts->{v} "; }
+    if (defined($opts->{k}))    { print "-k $opts->{k} "; }
+    if (defined($opts->{d}))    { print "-d "; }
+    print "\n";
+}
+    
+sub prt_warn()
+{
+    my ($msg) = @_;
+    print("*** $0 warning ***: $msg\n");
+}
+
+sub prt_err_exit()
+{
+    my ($msg) = @_;
+    print("*** $0 error ***: $msg\n");
+    exit();
+}
+
+sub toolname()
+{
+    my ($tname) = @_;
+    $tname =~ m/([\.\_\-a-zA-Z0-9]+)$/;
+    return $1;
+}
+
+sub prt_flush()
+{
+    select()->flush();
+}
+
+
+#------------------------------------------------------------------------------#
+# Auxiliary functions
+#------------------------------------------------------------------------------#
+
+sub resolve_inc() {    # Copy from template kept in UTILS package
+    my ($cref, $pmname) = @_;
+    my @progname_toks = split(/\//, $0);
+    pop @progname_toks;
+    my $progpath = join('/', @progname_toks);
+    my $fullname = $progpath . '/' . $pmname;
+    open(my $fh, "<$fullname") || die "non-existing file: $pmname\n";
+    return $fh;
+}
+
+# jpms

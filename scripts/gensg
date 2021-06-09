@@ -1,0 +1,45 @@
+#!/usr/bin/env perl
+
+push @INC, \&resolve_inc;
+
+use strict;
+use warnings;
+
+require Utils;
+import Utils qw( &rand_gen );
+
+require HardCoded;
+import HardCoded qw( &grd_classifier );
+
+use constant MGRD => 10;
+
+# Hard-coded grade classifier for randomly generated Student Grade dataset.
+die "Usage $0 <num> \n" unless @ARGV == 1;
+my $num = shift @ARGV;
+
+##srand(time); Uncomment to get actual randomness
+print "Inst,Q,E,H,R,M\n";
+for (my $i=1; $i<=$num; ++$i) {
+    my $Q = &rand_gen(MGRD+1);
+    my $E = &rand_gen(MGRD+1);
+    my $H = &rand_gen(MGRD+1);
+    my $R = &rand_gen(MGRD+1);
+    my $M = &grd_classifier([$Q, $E, $H, $R]);
+    print "$i,$Q,$E,$H,$R,$M\n";
+}
+
+1;
+
+#------------------------------------------------------------------------------#
+# Auxiliary functions
+#------------------------------------------------------------------------------#
+
+sub resolve_inc() {    # Copy from template kept in UTILS package
+    my ($cref, $pmname) = @_;
+    my @progname_toks = split(/\//, $0);
+    pop @progname_toks;
+    my $progpath = join('/', @progname_toks);
+    my $fullname = $progpath . '/' . $pmname;
+    open(my $fh, "<$fullname") || die "non-existing file: $pmname\n";
+    return $fh;
+}

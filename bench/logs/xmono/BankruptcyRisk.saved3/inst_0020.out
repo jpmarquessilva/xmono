@@ -1,0 +1,82 @@
+Running ./scripts/monoxp on the following classifier & instance:
+    Fmt file:  ./bench/spec/BankruptcyRisk/BR.txt
+    Inst file: ./bench/inst/BankruptcyRisk/inst_0020.txt
+Additional options:  -t RDT -N all -w -s -v 10 
+Deciding whether to extract one AXp or one CXp
+Classif([2 1 2 1 1 5 4 2 4 4 2 4])=3
+Classif([2 1 2 1 1 5 4 2 4 4 2 4])=3
+Finding one AXp (w/ Univs: [])
+Classif([1 1 2 1 1 5 4 2 4 4 2 4])=3
+Classif([4 1 2 1 1 5 4 2 4 4 2 4])=3
+Classif([1 1 2 1 1 5 4 2 4 4 2 4])=3
+Classif([4 4 2 1 1 5 4 2 4 4 2 4])=3
+Classif([1 1 1 1 1 5 4 2 4 4 2 4])=3
+Classif([4 4 4 1 1 5 4 2 4 4 2 4])=3
+Classif([1 1 1 1 1 5 4 2 4 4 2 4])=3
+Classif([4 4 4 4 1 5 4 2 4 4 2 4])=3
+Classif([1 1 1 1 1 5 4 2 4 4 2 4])=3
+Classif([4 4 4 4 4 5 4 2 4 4 2 4])=3
+Classif([1 1 1 1 1 1 4 2 4 4 2 4])=3
+Classif([4 4 4 4 4 4 4 2 4 4 2 4])=3
+Classif([1 1 1 1 1 1 1 2 4 4 2 4])=1
+Classif([4 4 4 4 4 4 4 2 4 4 2 4])=3
+Classif([1 1 1 1 1 1 4 1 4 4 2 4])=3
+Classif([4 4 4 4 4 4 4 4 4 4 2 4])=3
+Classif([1 1 1 1 1 1 4 1 1 4 2 4])=2
+Classif([4 4 4 4 4 4 4 4 4 4 2 4])=3
+Classif([1 1 1 1 1 1 4 1 4 1 2 4])=3
+Classif([4 4 4 4 4 4 4 4 4 4 2 4])=3
+Classif([1 1 1 1 1 1 4 1 4 1 1 4])=3
+Classif([4 4 4 4 4 4 4 4 4 4 4 4])=3
+Classif([1 1 1 1 1 1 4 1 4 1 1 1])=3
+Classif([4 4 4 4 4 4 4 4 4 4 4 4])=3
+AXp: 7 9
+Elapsed time:   0.007332 s
+WARNING! DIMACS header mismatch: wrong number of variables.
+Deciding whether to extract one AXp or one CXp
+Classif([2 1 2 1 1 5 4 2 1 0 0 0])=2
+Classif([2 1 2 1 1 5 4 2 4 0 0 0])=3
+Finding one CXp (w/ Fixes: [1 2 3 4 5 6 7 8])
+Classif([2 1 2 1 1 5 4 2 4 0 0 0])=3
+Classif([2 1 2 1 1 5 4 2 4 0 0 0])=3
+Classif([2 1 2 1 1 5 4 2 1 4 0 0])=2
+Classif([2 1 2 1 1 5 4 2 4 4 0 0])=3
+Classif([2 1 2 1 1 5 4 2 1 4 2 0])=2
+Classif([2 1 2 1 1 5 4 2 4 4 2 0])=3
+Classif([2 1 2 1 1 5 4 2 1 4 2 4])=2
+Classif([2 1 2 1 1 5 4 2 4 4 2 4])=3
+CXp: 9
+Elapsed time:   0.007209 s
+WARNING! DIMACS header mismatch: wrong number of variables.
+Deciding whether to extract one AXp or one CXp
+Classif([2 1 2 1 1 5 1 2 4 0 0 0])=2
+Classif([2 1 2 1 1 5 4 2 4 0 0 0])=3
+Finding one CXp (w/ Fixes: [1 2 3 4 5 6 8 9])
+Classif([2 1 2 1 1 5 4 2 4 0 0 0])=3
+Classif([2 1 2 1 1 5 4 2 4 0 0 0])=3
+Classif([2 1 2 1 1 5 1 2 4 4 0 0])=2
+Classif([2 1 2 1 1 5 4 2 4 4 0 0])=3
+Classif([2 1 2 1 1 5 1 2 4 4 2 0])=2
+Classif([2 1 2 1 1 5 4 2 4 4 2 0])=3
+Classif([2 1 2 1 1 5 1 2 4 4 2 4])=2
+Classif([2 1 2 1 1 5 4 2 4 4 2 4])=3
+CXp: 7
+Elapsed time:   0.006506 s
+WARNING! DIMACS header mismatch: wrong number of variables.
+Total running time:   0.027926 s
+Summary of running ./scripts/monoxp
+Total number of explanations: 3
+Average explanation size:     1.33
+Total number of AXp's:        1
+Average AXp size:             2.00
+Total number of CXp's:        2
+Average CXp size:             1.00
+Number of SAT oracle calls:   4
+Total time in SAT oracle:     0.025346
+Number of classifier calls:   46
+Total time in classifier:     0.000206
+Number of prediction fixes:   0
+
+real	0m0.068s
+user	0m0.040s
+sys	0m0.020s

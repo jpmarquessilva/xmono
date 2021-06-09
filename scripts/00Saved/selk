@@ -1,0 +1,45 @@
+#!/usr/bin/env perl
+
+push @INC, \&resolve_inc;
+
+use strict;
+use warnings;
+
+require Utils;
+import Utils qw( &rand_gen  );
+
+
+die "Usage: $0 <range> <num-picks>\n" unless @ARGV == 2;
+my $range = shift @ARGV;
+my $nsel = shift @ARGV;
+
+my %id = ();
+for(my $i=1; $i<=$range; ++$i) {
+    $id{$i} = 1;
+}
+
+##srand(time); Uncomment to get actual randomness
+for(my $i=1; $i<=$nsel; ++$i) {
+    my $sel = &rand_gen($range);
+    my @id_lst = sort {$a<=>$b} keys %id;
+    print "$id_lst[$sel]\n";
+    delete($id{$id_lst[$sel]});
+    $range--;
+}
+  
+
+1;
+
+#------------------------------------------------------------------------------#
+# Auxiliary functions
+#------------------------------------------------------------------------------#
+
+sub resolve_inc() {    # Copy from template kept in UTILS package
+    my ($cref, $pmname) = @_;
+    my @progname_toks = split(/\//, $0);
+    pop @progname_toks;
+    my $progpath = join('/', @progname_toks);
+    my $fullname = $progpath . '/' . $pmname;
+    open(my $fh, "<$fullname") || die "non-existing file: $pmname\n";
+    return $fh;
+}

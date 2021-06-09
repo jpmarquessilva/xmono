@@ -1,0 +1,93 @@
+Running ./scripts/monoxp on the following classifier & instance:
+    Desc file: ./bench/desc/auto-mpg.txt
+    Fmt file:  ./bench/spec/Auto-MPG/Auto-MPG.spec
+    Inst file: ./bench/inst/Auto-MPG/inst_0216.txt
+Additional options:  -t CMT -N all -m -w -s -v 10 
+Deciding whether to extract one AXp or one CXp
+Classif([3 4 97.0 75.0 2171.0 16.0 75])=21.0  => time: 2.60829186439514
+Classif([3 4 97.0 75.0 2171.0 16.0 75])=21.0  => time: 2.88893890380859
+Finding one AXp (w/ Univs: [])
+Classif([1 4 97.0 75.0 2171.0 16.0 75])=21.0  => time: 2.79422402381897
+Classif([3 4 97.0 75.0 2171.0 16.0 75])=21.0  => time: 2.84152603149414
+Classif([1 3 97.0 75.0 2171.0 16.0 75])=21.0  => time: 2.75237107276917
+Classif([3 8 97.0 75.0 2171.0 16.0 75])=22.0  => time: 2.61105704307556
+WARN: Corrected Classif[1 4 68.0 75.0 2171.0 16.0 75], from 22.0 to 21.0, due to [1 4 97.0 75.0 2171.0 16.0 75]
+Classif([1 4 68.0 75.0 2171.0 16.0 75])=21.0  => time: 2.61984896659851
+WARN: Corrected Classif[3 4 455.0 75.0 2171.0 16.0 75], from 11.0 to 21.0, due to [3 4 97.0 75.0 2171.0 16.0 75]
+Classif([3 4 455.0 75.0 2171.0 16.0 75])=21.0  => time: 2.65221405029297
+WARN: Corrected Classif[1 4 68.0 46.0 2171.0 16.0 75], from 22.0 to 21.0, due to [1 4 68.0 75.0 2171.0 16.0 75]
+Classif([1 4 68.0 46.0 2171.0 16.0 75])=21.0  => time: 2.69654011726379
+WARN: Corrected Classif[3 4 455.0 230.0 2171.0 16.0 75], from 11.0 to 21.0, due to [3 4 455.0 75.0 2171.0 16.0 75]
+Classif([3 4 455.0 230.0 2171.0 16.0 75])=21.0  => time: 2.6403660774231
+Classif([1 4 68.0 46.0 1613.0 16.0 75])=16.0  => time: 2.87643814086914
+Classif([3 4 455.0 230.0 5140.0 16.0 75])=41.5  => time: 2.65565395355225
+WARN: Corrected Classif[1 4 68.0 46.0 2171.0 8.0 75], from 22.0 to 21.0, due to [1 4 68.0 46.0 2171.0 16.0 75]
+Classif([1 4 68.0 46.0 2171.0 8.0 75])=21.0  => time: 2.67738795280457
+WARN: Corrected Classif[3 4 455.0 230.0 2171.0 24.8 75], from 11.0 to 21.0, due to [3 4 455.0 230.0 2171.0 16.0 75]
+Classif([3 4 455.0 230.0 2171.0 24.8 75])=21.0  => time: 2.70996999740601
+WARN: Corrected Classif[1 4 68.0 46.0 2171.0 8.0 70], from 22.0 to 21.0, due to [1 4 68.0 46.0 2171.0 8.0 75]
+Classif([1 4 68.0 46.0 2171.0 8.0 70])=21.0  => time: 2.61410689353943
+WARN: Corrected Classif[3 4 455.0 230.0 2171.0 24.8 82], from 11.0 to 21.0, due to [3 4 455.0 230.0 2171.0 24.8 75]
+Classif([3 4 455.0 230.0 2171.0 24.8 82])=21.0  => time: 2.66004085540771
+AXp: 2 5
+Elapsed time:   43.302689 s
+Deciding whether to extract one AXp or one CXp
+Classif([3 4 97.0 75.0 1613.0 0 0])=12.0  => time: 2.62272906303406
+Classif([3 4 97.0 75.0 5140.0 0 0])=30.0  => time: 2.63924288749695
+Finding one CXp (w/ Fixes: [1 2 3 4])
+Classif([3 4 97.0 75.0 2171.0 0 0])=15.0  => time: 2.69973206520081
+Classif([3 4 97.0 75.0 2171.0 0 0])=15.0  => time: 2.60087299346924
+Classif([3 4 97.0 75.0 1613.0 16.0 0])=16.0  => time: 2.77223777770996
+Classif([3 4 97.0 75.0 5140.0 16.0 0])=35.0  => time: 2.65991711616516
+WARN: Corrected Classif[3 4 97.0 75.0 1613.0 16.0 75], from 15.0 to 16.0, due to [1 4 68.0 46.0 1613.0 16.0 75]
+Classif([3 4 97.0 75.0 1613.0 16.0 75])=16.0  => time: 2.62228393554688
+WARN: Corrected Classif[3 4 97.0 75.0 5140.0 16.0 75], from 46.6 to 41.5, due to [3 4 455.0 230.0 5140.0 16.0 75]
+Classif([3 4 97.0 75.0 5140.0 16.0 75])=41.5  => time: 2.63414406776428
+CXp: 5
+Elapsed time:   21.254331 s
+Deciding whether to extract one AXp or one CXp
+Classif([3 3 97.0 75.0 2171.0 0 0])=15.0  => time: 2.79293894767761
+Classif([3 8 97.0 75.0 2171.0 0 0])=15.0  => time: 2.62533497810364
+Finding one AXp (w/ Univs: [2])
+Classif([1 3 97.0 75.0 2171.0 0 0])=14.0  => time: 2.64014792442322
+Classif([3 8 97.0 75.0 2171.0 0 0])=15.0  => time: 2.64671397209167
+Classif([3 3 68.0 75.0 2171.0 0 0])=14.0  => time: 2.720871925354
+WARN: Corrected Classif[3 8 455.0 75.0 2171.0 0 0], from 12.0 to 15.0, due to [3 8 97.0 75.0 2171.0 0 0]
+Classif([3 8 455.0 75.0 2171.0 0 0])=15.0  => time: 2.74198913574219
+Classif([3 3 97.0 46.0 2171.0 0 0])=15.0  => time: 2.9449610710144
+WARN: Corrected Classif[3 8 97.0 230.0 2171.0 0 0], from 12.0 to 15.0, due to [3 8 97.0 75.0 2171.0 0 0]
+Classif([3 8 97.0 230.0 2171.0 0 0])=15.0  => time: 2.81200194358826
+Classif([3 3 97.0 46.0 1613.0 0 0])=12.0  => time: 2.8458240032196
+WARN: Corrected Classif[3 8 97.0 230.0 5140.0 0 0], from 27.0 to 30.0, due to [3 4 97.0 75.0 5140.0 0 0]
+Classif([3 8 97.0 230.0 5140.0 0 0])=30.0  => time: 2.75073003768921
+Classif([3 3 97.0 46.0 2171.0 8.0 0])=18.0  => time: 2.80312895774841
+Classif([3 8 97.0 230.0 2171.0 24.8 0])=20.0  => time: 2.91493105888367
+WARN: Corrected Classif[3 3 97.0 46.0 2171.0 16.0 70], from 22.0 to 21.0, due to [3 4 97.0 75.0 2171.0 16.0 75]
+Classif([3 3 97.0 46.0 2171.0 16.0 70])=21.0  => time: 2.7189519405365
+WARN: Corrected Classif[3 8 97.0 230.0 2171.0 16.0 82], from 21.0 to 22.0, due to [3 8 97.0 75.0 2171.0 16.0 75]
+Classif([3 8 97.0 230.0 2171.0 16.0 82])=22.0  => time: 2.78049993515015
+AXp: 1 3 5 6 7
+Elapsed time:   38.742449 s
+Deciding whether to extract one AXp or one CXp
+Classif([1 3 97.0 75.0 2171.0 16.0 75])=21.0  => time: 3.0388970375061
+Classif([3 8 97.0 75.0 2171.0 16.0 75])=22.0  => time: 2.7893590927124
+Finding one CXp (w/ Fixes: [3 4 5 6 7])
+Classif([3 3 97.0 75.0 2171.0 16.0 75])=21.0  => time: 2.67485308647156
+Classif([3 8 97.0 75.0 2171.0 16.0 75])=22.0  => time: 2.89452195167542
+Classif([3 4 97.0 75.0 2171.0 16.0 75])=21.0  => time: 3.02977085113525
+Classif([3 4 97.0 75.0 2171.0 16.0 75])=21.0  => time: 3.00733113288879
+CXp: 2
+Elapsed time:   17.437975 s
+Total running time:   120.741423 s
+Summary of running ./scripts/monoxp
+Total number of explanations: 4
+Average explanation size:     2.25
+Total number of AXp's:        2
+Average AXp size:             3.50
+Total number of CXp's:        2
+Average CXp size:             1.00
+Number of SAT oracle calls:   5
+Total time in SAT oracle:     0.012614
+Number of classifier calls:   44
+Total time in classifier:     120.723895
+Number of prediction fixes:   15

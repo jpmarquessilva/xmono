@@ -1,0 +1,417 @@
+inst 1:
+  anchor explanation: ['Mass <= 30.80', 'Plas <= 111.00', 'Preg = 1.0']
+  anchor features: [5, 1, 0]
+  size: 3
+  calls: 15214
+  time: 56.22
+inst 2:
+  anchor explanation: ['Pedi <= 0.44', 'Pres = 0.0']
+  anchor features: [6, 2]
+  size: 2
+  calls: 13014
+  time: 47.88
+inst 3:
+  anchor explanation: ['Preg = 2.0', 'Pres = 0.0']
+  anchor features: [0, 2]
+  size: 2
+  calls: 13612
+  time: 49.85
+inst 4:
+  anchor explanation: ['Pedi <= 0.58', 'Pres = 0.0']
+  anchor features: [6, 2]
+  size: 2
+  calls: 14612
+  time: 55.50
+inst 5:
+  anchor explanation: ['Pedi <= 0.58', 'Preg = 1.0']
+  anchor features: [6, 0]
+  size: 2
+  calls: 11214
+  time: 41.73
+inst 6:
+  anchor explanation: ['Plas <= 144.00', 'Preg = 0.0']
+  anchor features: [1, 0]
+  size: 2
+  calls: 10209
+  time: 37.25
+inst 7:
+  anchor explanation: ['Pedi <= 0.58', 'Preg = 2.0']
+  anchor features: [6, 0]
+  size: 2
+  calls: 14303
+  time: 53.00
+inst 8:
+  anchor explanation: ['Mass <= 34.00', 'Preg = 0.0']
+  anchor features: [5, 0]
+  size: 2
+  calls: 11614
+  time: 42.77
+inst 9:
+  anchor explanation: ['Plas <= 144.00', 'Pedi <= 0.44', 'Mass <= 30.80']
+  anchor features: [1, 6, 5]
+  size: 3
+  calls: 14614
+  time: 58.01
+inst 10:
+  anchor explanation: ['Mass <= 34.00', 'Preg = 0.0']
+  anchor features: [5, 0]
+  size: 2
+  calls: 12815
+  time: 50.28
+inst 11:
+  anchor explanation: ['Pedi <= 0.80', 'Preg = 2.0']
+  anchor features: [6, 0]
+  size: 2
+  calls: 11813
+  time: 43.92
+inst 12:
+  anchor explanation: ['Age <= 27.00', 'Pres = 0.0']
+  anchor features: [7, 2]
+  size: 2
+  calls: 12103
+  time: 44.12
+inst 13:
+  anchor explanation: ['Age <= 38.00', 'Preg = 2.0']
+  anchor features: [7, 0]
+  size: 2
+  calls: 14103
+  time: 51.71
+inst 14:
+  anchor explanation: ['Plas <= 163.00', 'Pedi <= 0.44', 'Mass <= 30.80']
+  anchor features: [1, 6, 5]
+  size: 3
+  calls: 13011
+  time: 47.26
+inst 15:
+  anchor explanation: ['Age > 50.00']
+  anchor features: [7]
+  size: 1
+  calls: 214
+  time: 1.02
+inst 16:
+  anchor explanation: ['Age > 50.00']
+  anchor features: [7]
+  size: 1
+  calls: 303
+  time: 1.30
+inst 17:
+  anchor explanation: ['Age > 38.00']
+  anchor features: [7]
+  size: 1
+  calls: 304
+  time: 1.32
+inst 18:
+  anchor explanation: ['Age > 50.00']
+  anchor features: [7]
+  size: 1
+  calls: 303
+  time: 1.30
+inst 19:
+  anchor explanation: ['Age > 38.00']
+  anchor features: [7]
+  size: 1
+  calls: 215
+  time: 1.00
+inst 20:
+  anchor explanation: ['Pedi > 0.58']
+  anchor features: [6]
+  size: 1
+  calls: 503
+  time: 2.02
+inst 21:
+  anchor explanation: ['Pedi > 0.58']
+  anchor features: [6]
+  size: 1
+  calls: 504
+  time: 2.06
+inst 22:
+  anchor explanation: ['Mass > 38.00']
+  anchor features: [5]
+  size: 1
+  calls: 411
+  time: 1.73
+inst 23:
+  anchor explanation: ['Pedi > 0.80']
+  anchor features: [6]
+  size: 1
+  calls: 503
+  time: 2.09
+inst 24:
+  anchor explanation: ['Age > 50.00']
+  anchor features: [7]
+  size: 1
+  calls: 303
+  time: 1.32
+inst 25:
+  anchor explanation: ['Age > 38.00']
+  anchor features: [7]
+  size: 1
+  calls: 304
+  time: 1.32
+inst 26:
+  anchor explanation: ['Pedi > 0.80']
+  anchor features: [6]
+  size: 1
+  calls: 409
+  time: 1.69
+inst 27:
+  anchor explanation: ['Age > 50.00']
+  anchor features: [7]
+  size: 1
+  calls: 303
+  time: 1.35
+inst 28:
+  anchor explanation: ['Age > 50.00']
+  anchor features: [7]
+  size: 1
+  calls: 306
+  time: 1.32
+inst 29:
+  anchor explanation: ['Age > 50.00']
+  anchor features: [7]
+  size: 1
+  calls: 219
+  time: 1.04
+inst 30:
+  anchor explanation: ['Mass > 38.00']
+  anchor features: [5]
+  size: 1
+  calls: 503
+  time: 2.05
+inst 31:
+  anchor explanation: ['Age > 38.00']
+  anchor features: [7]
+  size: 1
+  calls: 215
+  time: 0.99
+inst 32:
+  anchor explanation: ['Pedi > 0.80']
+  anchor features: [6]
+  size: 1
+  calls: 414
+  time: 1.72
+inst 33:
+  anchor explanation: ['Age > 50.00']
+  anchor features: [7]
+  size: 1
+  calls: 303
+  time: 1.30
+inst 34:
+  anchor explanation: ['Age > 38.00']
+  anchor features: [7]
+  size: 1
+  calls: 303
+  time: 1.31
+inst 35:
+  anchor explanation: ['Age > 38.00']
+  anchor features: [7]
+  size: 1
+  calls: 303
+  time: 1.30
+inst 36:
+  anchor explanation: ['Pedi > 0.80']
+  anchor features: [6]
+  size: 1
+  calls: 503
+  time: 2.05
+inst 37:
+  anchor explanation: ['Age > 50.00']
+  anchor features: [7]
+  size: 1
+  calls: 304
+  time: 1.32
+inst 38:
+  anchor explanation: ['Insu = 190.0']
+  anchor features: [4]
+  size: 1
+  calls: 703
+  time: 2.74
+inst 39:
+  anchor explanation: ['Age > 38.00']
+  anchor features: [7]
+  size: 1
+  calls: 306
+  time: 1.31
+inst 40:
+  anchor explanation: ['Age > 38.00']
+  anchor features: [7]
+  size: 1
+  calls: 303
+  time: 1.34
+inst 41:
+  anchor explanation: ['Age > 50.00']
+  anchor features: [7]
+  size: 1
+  calls: 303
+  time: 1.33
+inst 42:
+  anchor explanation: ['Age > 38.00']
+  anchor features: [7]
+  size: 1
+  calls: 213
+  time: 1.01
+inst 43:
+  anchor explanation: ['Pedi > 0.80']
+  anchor features: [6]
+  size: 1
+  calls: 504
+  time: 2.06
+inst 44:
+  anchor explanation: ['Pedi > 0.58']
+  anchor features: [6]
+  size: 1
+  calls: 503
+  time: 2.02
+inst 45:
+  anchor explanation: ['Plas > 163.00']
+  anchor features: [1]
+  size: 1
+  calls: 903
+  time: 3.55
+inst 46:
+  anchor explanation: ['Age > 38.00']
+  anchor features: [7]
+  size: 1
+  calls: 304
+  time: 1.30
+inst 47:
+  anchor explanation: ['Mass > 34.00']
+  anchor features: [5]
+  size: 1
+  calls: 612
+  time: 2.43
+inst 48:
+  anchor explanation: ['Age > 38.00']
+  anchor features: [7]
+  size: 1
+  calls: 215
+  time: 1.01
+inst 49:
+  anchor explanation: ['Age > 38.00']
+  anchor features: [7]
+  size: 1
+  calls: 303
+  time: 1.30
+inst 50:
+  anchor explanation: ['Age > 50.00']
+  anchor features: [7]
+  size: 1
+  calls: 304
+  time: 1.32
+inst 51:
+  anchor explanation: ['Age > 38.00']
+  anchor features: [7]
+  size: 1
+  calls: 303
+  time: 1.31
+inst 52:
+  anchor explanation: ['Age > 38.00']
+  anchor features: [7]
+  size: 1
+  calls: 214
+  time: 0.99
+inst 53:
+  anchor explanation: ['Age > 50.00']
+  anchor features: [7]
+  size: 1
+  calls: 217
+  time: 0.99
+inst 54:
+  anchor explanation: ['Mass > 34.00']
+  anchor features: [5]
+  size: 1
+  calls: 413
+  time: 1.70
+inst 55:
+  anchor explanation: ['Pedi > 0.58']
+  anchor features: [6]
+  size: 1
+  calls: 411
+  time: 1.71
+inst 56:
+  anchor explanation: ['Age > 50.00']
+  anchor features: [7]
+  size: 1
+  calls: 303
+  time: 1.29
+inst 57:
+  anchor explanation: ['Mass > 38.00']
+  anchor features: [5]
+  size: 1
+  calls: 703
+  time: 2.75
+inst 58:
+  anchor explanation: ['Pedi > 0.80']
+  anchor features: [6]
+  size: 1
+  calls: 413
+  time: 1.75
+inst 59:
+  anchor explanation: ['Age > 38.00']
+  anchor features: [7]
+  size: 1
+  calls: 303
+  time: 1.35
+inst 60:
+  anchor explanation: ['Age > 50.00']
+  anchor features: [7]
+  size: 1
+  calls: 303
+  time: 1.30
+inst 61:
+  anchor explanation: ['Age > 38.00']
+  anchor features: [7]
+  size: 1
+  calls: 303
+  time: 1.31
+inst 62:
+  anchor explanation: ['Pedi > 0.80']
+  anchor features: [6]
+  size: 1
+  calls: 503
+  time: 2.04
+inst 63:
+  anchor explanation: ['Age > 50.00']
+  anchor features: [7]
+  size: 1
+  calls: 303
+  time: 1.29
+inst 64:
+  anchor explanation: ['Mass > 34.00']
+  anchor features: [5]
+  size: 1
+  calls: 703
+  time: 2.74
+inst 65:
+  anchor explanation: ['Age > 38.00']
+  anchor features: [7]
+  size: 1
+  calls: 303
+  time: 1.29
+inst 66:
+  anchor explanation: ['Age > 50.00']
+  anchor features: [7]
+  size: 1
+  calls: 303
+  time: 1.30
+inst 67:
+  anchor explanation: ['Pedi > 0.44', 'Mass > 30.80']
+  anchor features: [6, 5]
+  size: 2
+  calls: 2008
+  time: 7.51
+inst 68:
+  anchor explanation: ['Pedi > 0.80']
+  anchor features: [6]
+  size: 1
+  calls: 305
+  time: 1.34
+inst 69:
+  anchor explanation: ['Mass > 38.00']
+  anchor features: [5]
+  size: 1
+  calls: 703
+  time: 2.78
+avg calls: 2966.61
+avg size: 1.26
+avg time: 11.20

@@ -1,0 +1,107 @@
+Running ./scripts/monoxp on the following classifier & instance:
+    Desc file: ./tools/monoboost/models/pima.pkl
+    Fmt file:  ./bench/spec/PimaMono/PM.txt
+    Inst file: ./bench/inst/PimaMono/inst_0002.txt
+Additional options:  -t MBT -N all -w -s -v 10 
+Deciding whether to extract one AXp or one CXp
+Classif([0 73 0 0 0 21.1 0.342 25])=-1  => time: 0.162626028060913
+Classif([0 73 0 0 0 21.1 0.342 25])=-1  => time: 0.160815000534058
+Finding one AXp (w/ Univs: [])
+Classif([0 73 0 0 0 21.1 0.342 25])=-1  => time: 0.162949800491333
+Classif([17 73 0 0 0 21.1 0.342 25])=1  => time: 0.175755023956299
+Classif([0 0 0 0 0 21.1 0.342 25])=-1  => time: 0.166737079620361
+Classif([0 199 0 0 0 21.1 0.342 25])=1  => time: 0.158983945846558
+Classif([0 73 0 0 0 21.1 0.342 25])=-1  => time: 0.15882396697998
+Classif([0 73 122 0 0 21.1 0.342 25])=1  => time: 0.163545846939087
+Classif([0 73 0 0 0 21.1 0.342 25])=-1  => time: 0.16193699836731
+Classif([0 73 0 99 0 21.1 0.342 25])=1  => time: 0.15833592414856
+Classif([0 73 0 0 0 21.1 0.342 25])=-1  => time: 0.158684015274048
+Classif([0 73 0 0 846 21.1 0.342 25])=1  => time: 0.15929388999939
+Classif([0 73 0 0 0 0 0.342 25])=-1  => time: 0.159112930297852
+Classif([0 73 0 0 0 67.1 0.342 25])=1  => time: 0.160304069519043
+Classif([0 73 0 0 0 21.1 0.078 25])=-1  => time: 0.15989089012146
+Classif([0 73 0 0 0 21.1 2.42 25])=1  => time: 0.156680822372437
+Classif([0 73 0 0 0 21.1 0.342 21])=-1  => time: 0.162052154541016
+Classif([0 73 0 0 0 21.1 0.342 81])=1  => time: 0.16327691078186
+AXp: 1 2 3 4 5 6 7 8
+Elapsed time:   2.917270 s
+Deciding whether to extract one AXp or one CXp
+Classif([0 73 0 0 0 21.1 0.342 25])=-1  => time: 0.161314010620117
+Classif([17 73 0 0 0 21.1 0.342 25])=1  => time: 0.160614967346191
+Finding one CXp (w/ Fixes: [2 3 4 5 6 7 8])
+Classif([0 73 0 0 0 21.1 0.342 25])=-1  => time: 0.160705089569092
+Classif([0 73 0 0 0 21.1 0.342 25])=-1  => time: 0.167222023010254
+CXp: 1
+Elapsed time:   0.657263 s
+Deciding whether to extract one AXp or one CXp
+Classif([0 73 0 0 0 21.1 0.342 21])=-1  => time: 0.164905071258545
+Classif([0 73 0 0 0 21.1 0.342 81])=1  => time: 0.162396907806396
+Finding one CXp (w/ Fixes: [1 2 3 4 5 6 7])
+Classif([0 73 0 0 0 21.1 0.342 25])=-1  => time: 0.172923803329468
+Classif([0 73 0 0 0 21.1 0.342 25])=-1  => time: 0.164630889892578
+CXp: 8
+Elapsed time:   0.672057 s
+Deciding whether to extract one AXp or one CXp
+Classif([0 73 0 0 0 21.1 0.078 25])=-1  => time: 0.160831928253174
+Classif([0 73 0 0 0 21.1 2.42 25])=1  => time: 0.161779880523682
+Finding one CXp (w/ Fixes: [1 2 3 4 5 6 8])
+Classif([0 73 0 0 0 21.1 0.342 25])=-1  => time: 0.162407875061035
+Classif([0 73 0 0 0 21.1 0.342 25])=-1  => time: 0.160321950912476
+CXp: 7
+Elapsed time:   0.652635 s
+Deciding whether to extract one AXp or one CXp
+Classif([0 73 0 0 0 0 0.342 25])=-1  => time: 0.165302038192749
+Classif([0 73 0 0 0 67.1 0.342 25])=1  => time: 0.162199974060059
+Finding one CXp (w/ Fixes: [1 2 3 4 5 7 8])
+Classif([0 73 0 0 0 21.1 0.342 25])=-1  => time: 0.162199020385742
+Classif([0 73 0 0 0 21.1 0.342 25])=-1  => time: 0.159260034561157
+CXp: 6
+Elapsed time:   0.655947 s
+Deciding whether to extract one AXp or one CXp
+Classif([0 73 0 0 0 21.1 0.342 25])=-1  => time: 0.162524938583374
+Classif([0 73 0 0 846 21.1 0.342 25])=1  => time: 0.159598112106323
+Finding one CXp (w/ Fixes: [1 2 3 4 6 7 8])
+Classif([0 73 0 0 0 21.1 0.342 25])=-1  => time: 0.161580085754395
+Classif([0 73 0 0 0 21.1 0.342 25])=-1  => time: 0.158965826034546
+CXp: 5
+Elapsed time:   0.649892 s
+Deciding whether to extract one AXp or one CXp
+Classif([0 73 0 0 0 21.1 0.342 25])=-1  => time: 0.159637928009033
+Classif([0 73 0 99 0 21.1 0.342 25])=1  => time: 0.159286022186279
+Finding one CXp (w/ Fixes: [1 2 3 5 6 7 8])
+Classif([0 73 0 0 0 21.1 0.342 25])=-1  => time: 0.159066200256348
+Classif([0 73 0 0 0 21.1 0.342 25])=-1  => time: 0.158720016479492
+CXp: 4
+Elapsed time:   0.643702 s
+Deciding whether to extract one AXp or one CXp
+Classif([0 73 0 0 0 21.1 0.342 25])=-1  => time: 0.16227912902832
+Classif([0 73 122 0 0 21.1 0.342 25])=1  => time: 0.162582159042358
+Finding one CXp (w/ Fixes: [1 2 4 5 6 7 8])
+Classif([0 73 0 0 0 21.1 0.342 25])=-1  => time: 0.159499168395996
+Classif([0 73 0 0 0 21.1 0.342 25])=-1  => time: 0.16124415397644
+CXp: 3
+Elapsed time:   0.652248 s
+Deciding whether to extract one AXp or one CXp
+Classif([0 0 0 0 0 21.1 0.342 25])=-1  => time: 0.158133983612061
+Classif([0 199 0 0 0 21.1 0.342 25])=1  => time: 0.156124114990234
+Finding one CXp (w/ Fixes: [1 3 4 5 6 7 8])
+Classif([0 73 0 0 0 21.1 0.342 25])=-1  => time: 0.154155969619751
+Classif([0 73 0 0 0 21.1 0.342 25])=-1  => time: 0.155630111694336
+CXp: 2
+Elapsed time:   0.630969 s
+Total running time:   8.138753 s
+Summary of running ./scripts/monoxp
+Total number of explanations: 9
+Average explanation size:     1.78
+Total number of AXp's:        1
+Average AXp size:             8.00
+Total number of CXp's:        8
+Average CXp size:             1.00
+Number of SAT oracle calls:   10
+Total time in SAT oracle:     0.064300
+Number of classifier calls:   50
+Total time in classifier:     8.067849
+
+real	0m8.179s
+user	0m20.079s
+sys	0m4.317s

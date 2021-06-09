@@ -1,0 +1,400 @@
+------------------------------------------
+INDEX 5 ROW [1 1 6 0]
+Anchor Explanation: [3, 1, 0]
+Time elapsed: 0.07408595085144043 s.
+------------------------------------------
+INDEX 25 ROW [2 2 4 0]
+Anchor Explanation: [1, 3, 0, 2]
+Time elapsed: 0.09606695175170898 s.
+------------------------------------------
+INDEX 28 ROW [1 7 4 3]
+Anchor Explanation: [3, 2, 1, 0]
+Time elapsed: 0.10150289535522461 s.
+------------------------------------------
+INDEX 29 ROW [4 6 7 3]
+Anchor Explanation: [1, 3, 0, 2]
+Time elapsed: 0.08722853660583496 s.
+------------------------------------------
+INDEX 30 ROW [ 6  7  1 10]
+Anchor Explanation: [3]
+Time elapsed: 0.043216705322265625 s.
+------------------------------------------
+INDEX 34 ROW [ 0  4  3 10]
+Anchor Explanation: [3]
+Time elapsed: 0.04039263725280762 s.
+------------------------------------------
+INDEX 36 ROW [4 4 1 0]
+Anchor Explanation: [3, 1, 0, 2]
+Time elapsed: 0.10428619384765625 s.
+------------------------------------------
+INDEX 38 ROW [5 5 6 3]
+Anchor Explanation: [1, 3, 2, 0]
+Time elapsed: 0.13610339164733887 s.
+------------------------------------------
+INDEX 57 ROW [ 3 10  6  8]
+Anchor Explanation: [3]
+Time elapsed: 0.05189204216003418 s.
+------------------------------------------
+INDEX 61 ROW [2 9 8 8]
+Anchor Explanation: [3]
+Time elapsed: 0.05009055137634277 s.
+------------------------------------------
+INDEX 96 ROW [2 6 1 0]
+Anchor Explanation: [3, 1, 0, 2]
+Time elapsed: 0.08457398414611816 s.
+------------------------------------------
+INDEX 113 ROW [9 3 3 5]
+Anchor Explanation: [3, 1]
+Time elapsed: 0.048063039779663086 s.
+------------------------------------------
+INDEX 116 ROW [5 7 0 5]
+Anchor Explanation: [3, 2, 1]
+Time elapsed: 0.06147122383117676 s.
+------------------------------------------
+INDEX 119 ROW [4 3 1 3]
+Anchor Explanation: [3, 1, 0, 2]
+Time elapsed: 0.06540894508361816 s.
+------------------------------------------
+INDEX 121 ROW [0 5 7 2]
+Anchor Explanation: [3, 0, 1, 2]
+Time elapsed: 0.060065507888793945 s.
+------------------------------------------
+INDEX 128 ROW [6 9 0 9]
+Anchor Explanation: [3]
+Time elapsed: 0.04054689407348633 s.
+------------------------------------------
+INDEX 132 ROW [2 8 9 7]
+Anchor Explanation: [3]
+Time elapsed: 0.04518389701843262 s.
+------------------------------------------
+INDEX 134 ROW [ 0  9  5 10]
+Anchor Explanation: [3]
+Time elapsed: 0.041008710861206055 s.
+------------------------------------------
+INDEX 135 ROW [ 3  9 10  0]
+Anchor Explanation: [1, 3, 2, 0]
+Time elapsed: 0.07220292091369629 s.
+------------------------------------------
+INDEX 140 ROW [ 5  7 10  8]
+Anchor Explanation: [3]
+Time elapsed: 0.040782928466796875 s.
+------------------------------------------
+INDEX 147 ROW [5 7 6 4]
+Anchor Explanation: [1, 0, 3]
+Time elapsed: 0.07167220115661621 s.
+------------------------------------------
+INDEX 148 ROW [0 8 8 6]
+Anchor Explanation: [3, 0]
+Time elapsed: 0.05196714401245117 s.
+------------------------------------------
+INDEX 150 ROW [0 8 5 1]
+Anchor Explanation: [1, 0, 3, 2]
+Time elapsed: 0.10673356056213379 s.
+------------------------------------------
+INDEX 153 ROW [ 5  0 10  8]
+Anchor Explanation: [3]
+Time elapsed: 0.04650688171386719 s.
+------------------------------------------
+INDEX 168 ROW [8 7 6 0]
+Anchor Explanation: [0, 1, 2, 3]
+Time elapsed: 0.08391594886779785 s.
+------------------------------------------
+INDEX 170 ROW [4 9 5 9]
+Anchor Explanation: [3]
+Time elapsed: 0.041588544845581055 s.
+------------------------------------------
+INDEX 180 ROW [2 1 4 7]
+Anchor Explanation: [3]
+Time elapsed: 0.04282426834106445 s.
+------------------------------------------
+INDEX 184 ROW [2 6 6 2]
+Anchor Explanation: [3, 1, 0, 2]
+Time elapsed: 0.08137631416320801 s.
+------------------------------------------
+INDEX 186 ROW [4 7 6 3]
+Anchor Explanation: [1, 0, 3]
+Time elapsed: 0.09051036834716797 s.
+------------------------------------------
+INDEX 202 ROW [0 7 6 2]
+Anchor Explanation: [3, 2, 0, 1]
+Time elapsed: 0.09004449844360352 s.
+------------------------------------------
+INDEX 203 ROW [5 9 6 5]
+Anchor Explanation: [1, 0, 2, 3]
+Time elapsed: 0.08739495277404785 s.
+------------------------------------------
+INDEX 204 ROW [10  6  1  3]
+Anchor Explanation: [1, 3, 2, 0]
+Time elapsed: 0.07309174537658691 s.
+------------------------------------------
+INDEX 205 ROW [9 7 4 4]
+Anchor Explanation: [0, 1, 3, 2]
+Time elapsed: 0.08645033836364746 s.
+------------------------------------------
+INDEX 216 ROW [ 3 10  3  5]
+Anchor Explanation: [1, 0, 3, 2]
+Time elapsed: 0.07096672058105469 s.
+------------------------------------------
+INDEX 233 ROW [10  7  2  4]
+Anchor Explanation: [0, 1, 3]
+Time elapsed: 0.07913994789123535 s.
+------------------------------------------
+INDEX 235 ROW [ 7  4 10  9]
+Anchor Explanation: [3]
+Time elapsed: 0.040364742279052734 s.
+------------------------------------------
+INDEX 266 ROW [0 7 5 6]
+Anchor Explanation: [3, 0]
+Time elapsed: 0.050398826599121094 s.
+------------------------------------------
+INDEX 267 ROW [3 4 5 8]
+Anchor Explanation: [3]
+Time elapsed: 0.04293704032897949 s.
+------------------------------------------
+INDEX 276 ROW [4 7 4 1]
+Anchor Explanation: [1, 0, 3]
+Time elapsed: 0.08783078193664551 s.
+------------------------------------------
+INDEX 279 ROW [10  5  4  7]
+Anchor Explanation: [3]
+Time elapsed: 0.0454554557800293 s.
+------------------------------------------
+INDEX 293 ROW [9 0 0 4]
+Anchor Explanation: [3, 1]
+Time elapsed: 0.0506129264831543 s.
+------------------------------------------
+INDEX 313 ROW [2 1 1 5]
+Anchor Explanation: [3, 1]
+Time elapsed: 0.0504305362701416 s.
+------------------------------------------
+INDEX 329 ROW [8 1 8 0]
+Anchor Explanation: [1, 3, 0, 2]
+Time elapsed: 0.06281518936157227 s.
+------------------------------------------
+INDEX 332 ROW [2 7 2 8]
+Anchor Explanation: [3]
+Time elapsed: 0.047872304916381836 s.
+------------------------------------------
+INDEX 333 ROW [4 7 1 7]
+Anchor Explanation: [3]
+Time elapsed: 0.045185089111328125 s.
+------------------------------------------
+INDEX 342 ROW [ 1  6  4 10]
+Anchor Explanation: [3]
+Time elapsed: 0.0407109260559082 s.
+------------------------------------------
+INDEX 359 ROW [ 5 10  8  7]
+Anchor Explanation: [3]
+Time elapsed: 0.04074835777282715 s.
+------------------------------------------
+INDEX 388 ROW [ 8  4  4 10]
+Anchor Explanation: [3]
+Time elapsed: 0.04158759117126465 s.
+------------------------------------------
+INDEX 390 ROW [1 5 3 2]
+Anchor Explanation: [3, 0, 1, 2]
+Time elapsed: 0.0683126449584961 s.
+------------------------------------------
+INDEX 406 ROW [ 1  1  2 10]
+Anchor Explanation: [3]
+Time elapsed: 0.0426328182220459 s.
+------------------------------------------
+INDEX 408 ROW [ 1 10  8  0]
+Anchor Explanation: [1, 3, 2, 0]
+Time elapsed: 0.13581204414367676 s.
+------------------------------------------
+INDEX 412 ROW [8 4 5 1]
+Anchor Explanation: [3, 0, 1, 2]
+Time elapsed: 0.24048590660095215 s.
+------------------------------------------
+INDEX 424 ROW [0 7 6 5]
+Anchor Explanation: [3, 0]
+Time elapsed: 0.07131314277648926 s.
+------------------------------------------
+INDEX 431 ROW [1 1 1 5]
+Anchor Explanation: [3, 1]
+Time elapsed: 0.05626225471496582 s.
+------------------------------------------
+INDEX 434 ROW [6 7 5 4]
+Anchor Explanation: [1, 0, 3]
+Time elapsed: 0.10993528366088867 s.
+------------------------------------------
+INDEX 435 ROW [10  9 10  7]
+Anchor Explanation: [0, 1, 2]
+Time elapsed: 0.07839035987854004 s.
+------------------------------------------
+INDEX 447 ROW [ 7  3  0 10]
+Anchor Explanation: [3]
+Time elapsed: 0.04155540466308594 s.
+------------------------------------------
+INDEX 456 ROW [2 2 0 1]
+Anchor Explanation: [3, 0, 1, 2]
+Time elapsed: 0.0866389274597168 s.
+------------------------------------------
+INDEX 471 ROW [9 9 1 4]
+Anchor Explanation: [1, 0, 3, 2]
+Time elapsed: 0.07928943634033203 s.
+------------------------------------------
+INDEX 487 ROW [ 8 10  3  8]
+Anchor Explanation: [3]
+Time elapsed: 0.07074761390686035 s.
+------------------------------------------
+INDEX 504 ROW [ 5 10  3 10]
+Anchor Explanation: [3]
+Time elapsed: 0.05607032775878906 s.
+------------------------------------------
+INDEX 510 ROW [ 9  1 10  4]
+Anchor Explanation: [3, 1]
+Time elapsed: 0.07528233528137207 s.
+------------------------------------------
+INDEX 525 ROW [2 6 0 8]
+Anchor Explanation: [3]
+Time elapsed: 0.06433963775634766 s.
+------------------------------------------
+INDEX 549 ROW [1 2 9 9]
+Anchor Explanation: [3]
+Time elapsed: 0.0566868782043457 s.
+------------------------------------------
+INDEX 554 ROW [5 4 5 9]
+Anchor Explanation: [3]
+Time elapsed: 0.050924062728881836 s.
+------------------------------------------
+INDEX 577 ROW [2 7 0 6]
+Anchor Explanation: [3, 0]
+Time elapsed: 0.0671083927154541 s.
+------------------------------------------
+INDEX 581 ROW [ 1 10  1  3]
+Anchor Explanation: [0, 1, 2, 3]
+Time elapsed: 0.14193034172058105 s.
+------------------------------------------
+INDEX 589 ROW [5 4 1 4]
+Anchor Explanation: [3, 1, 0]
+Time elapsed: 0.06376314163208008 s.
+------------------------------------------
+INDEX 595 ROW [6 5 7 8]
+Anchor Explanation: [3]
+Time elapsed: 0.041940927505493164 s.
+------------------------------------------
+INDEX 601 ROW [0 4 8 6]
+Anchor Explanation: [3, 1]
+Time elapsed: 0.05118560791015625 s.
+------------------------------------------
+INDEX 607 ROW [3 5 9 0]
+Anchor Explanation: [1, 0, 3]
+Time elapsed: 0.09927511215209961 s.
+------------------------------------------
+INDEX 610 ROW [2 6 4 4]
+Anchor Explanation: [3, 0, 1, 2]
+Time elapsed: 0.07057332992553711 s.
+------------------------------------------
+INDEX 626 ROW [7 4 7 8]
+Anchor Explanation: [3]
+Time elapsed: 0.051322221755981445 s.
+------------------------------------------
+INDEX 629 ROW [4 3 4 6]
+Anchor Explanation: [3, 1]
+Time elapsed: 0.05190730094909668 s.
+------------------------------------------
+INDEX 639 ROW [1 1 0 8]
+Anchor Explanation: [3]
+Time elapsed: 0.04279685020446777 s.
+------------------------------------------
+INDEX 645 ROW [5 0 0 0]
+Anchor Explanation: [1, 3, 2, 0]
+Time elapsed: 0.06309962272644043 s.
+------------------------------------------
+INDEX 664 ROW [7 1 3 1]
+Anchor Explanation: [1, 3, 0]
+Time elapsed: 0.07732105255126953 s.
+------------------------------------------
+INDEX 725 ROW [7 6 9 9]
+Anchor Explanation: [3]
+Time elapsed: 0.04461169242858887 s.
+------------------------------------------
+INDEX 731 ROW [2 4 0 6]
+Anchor Explanation: [3, 1]
+Time elapsed: 0.05053305625915527 s.
+------------------------------------------
+INDEX 739 ROW [7 3 3 5]
+Anchor Explanation: [3, 1]
+Time elapsed: 0.04904007911682129 s.
+------------------------------------------
+INDEX 746 ROW [6 0 0 6]
+Anchor Explanation: [3, 1]
+Time elapsed: 0.05668973922729492 s.
+------------------------------------------
+INDEX 758 ROW [10  2  4  2]
+Anchor Explanation: [1, 0, 3, 2]
+Time elapsed: 0.08377194404602051 s.
+------------------------------------------
+INDEX 771 ROW [8 7 4 7]
+Anchor Explanation: [3]
+Time elapsed: 0.04832053184509277 s.
+------------------------------------------
+INDEX 791 ROW [3 4 8 6]
+Anchor Explanation: [3, 1]
+Time elapsed: 0.05440235137939453 s.
+------------------------------------------
+INDEX 806 ROW [1 4 1 5]
+Anchor Explanation: [3, 1]
+Time elapsed: 0.05409979820251465 s.
+------------------------------------------
+INDEX 822 ROW [ 0  3  9 10]
+Anchor Explanation: [3]
+Time elapsed: 0.042836904525756836 s.
+------------------------------------------
+INDEX 844 ROW [3 9 7 5]
+Anchor Explanation: [3, 0, 2, 1]
+Time elapsed: 0.05773520469665527 s.
+------------------------------------------
+INDEX 850 ROW [9 4 1 1]
+Anchor Explanation: [1, 0, 3]
+Time elapsed: 0.10295844078063965 s.
+------------------------------------------
+INDEX 853 ROW [2 2 2 2]
+Anchor Explanation: [3, 1, 0]
+Time elapsed: 0.07467174530029297 s.
+------------------------------------------
+INDEX 864 ROW [4 6 6 5]
+Anchor Explanation: [3, 1, 0]
+Time elapsed: 0.058701276779174805 s.
+------------------------------------------
+INDEX 871 ROW [3 6 5 9]
+Anchor Explanation: [3]
+Time elapsed: 0.04083967208862305 s.
+------------------------------------------
+INDEX 908 ROW [ 5 10  6  2]
+Anchor Explanation: [1, 0, 3]
+Time elapsed: 0.05958294868469238 s.
+------------------------------------------
+INDEX 922 ROW [1 1 2 4]
+Anchor Explanation: [3, 1]
+Time elapsed: 0.0511784553527832 s.
+------------------------------------------
+INDEX 939 ROW [9 6 0 1]
+Anchor Explanation: [1, 3, 0, 2]
+Time elapsed: 0.08025646209716797 s.
+------------------------------------------
+INDEX 948 ROW [7 8 4 5]
+Anchor Explanation: [1, 0, 3, 2]
+Time elapsed: 0.08760857582092285 s.
+------------------------------------------
+INDEX 950 ROW [10  9  3  0]
+Anchor Explanation: [1, 3, 0, 2]
+Time elapsed: 0.1036844253540039 s.
+------------------------------------------
+INDEX 958 ROW [1 3 8 7]
+Anchor Explanation: [3]
+Time elapsed: 0.04345846176147461 s.
+------------------------------------------
+INDEX 959 ROW [5 5 1 5]
+Anchor Explanation: [3, 1]
+Time elapsed: 0.05063438415527344 s.
+------------------------------------------
+INDEX 963 ROW [8 3 6 2]
+Anchor Explanation: [1, 0, 3, 2]
+Time elapsed: 0.07825446128845215 s.
+------------------------------------------
+INDEX 994 ROW [1 1 5 9]
+Anchor Explanation: [3]
+Time elapsed: 0.04059481620788574 s.

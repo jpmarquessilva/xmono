@@ -1,0 +1,14 @@
+name = iris_3
+min_max_values = {'sepal.length':[4.3,7.0],'sepal.width':[2.0,4.4],'petal.length':[1.0,5.1],'petal.width':[0.1,1.8]}
+feature_names = sepal.length,sepal.width,petal.length,petal.width
+feature_types = Real,Real,Real,Real
+is_classification = True
+model_dir = ./bench/models/Iris_3/
+monotonic_indices = 0,1,2,3
+monotonicity_directions = 0
+model_parameters = { 'batch_size': 1, 'epochs': 5, 'lr': 0.01, 'layer_size': 3, 'hidden_size': 8}
+tmp_prefix = 
+scalability = False
+is_parallel = True
+solver_name = optimathsat
+solver = Solver_OptiMathSat

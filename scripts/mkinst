@@ -1,0 +1,28 @@
+#!/usr/bin/env perl
+
+use strict;
+use warnings;
+
+die "Usage: $0 <dir> 0|1 <files>\n" unless @ARGV >= 3;
+my $dir = shift @ARGV;       # Directory where to write the inst files
+my $skip = shift @ARGV;      # skip=1 if 1st column lists sample id
+
+my $frst = 1;
+my $inst = 1;
+while(<>) {
+    s/\r[\n]*/\n/gm;
+    chomp;
+    if ($frst) { $frst = 0; next; }
+    my @toks = split(/,/);
+    if ($skip) { shift @toks; }   # drop first (sample) column
+    my $cl = pop @toks;           # extract prediction
+    my $nf = $#toks+1;
+    my $fname = sprintf("$dir/inst_%04d.txt", $inst++);
+    open(my $fh, ">$fname") || die "Unable to open file $fname. \n";
+    print $fh "$nf\n";
+    { local $" = "\n";
+      print $fh "@toks\n";
+    }
+    print $fh "$cl\n";
+    close($fh);
+}

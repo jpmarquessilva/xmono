@@ -1,0 +1,16 @@
+#!/usr/bin/env perl
+
+my $litcnt = 0;
+my $xpnum = 0;
+while(<>) {
+    if (m/^Anchor explanation:\s+\[([^\]]+)\]/) {
+        my @lits = split(/,/, $1);
+        $litcnt += ($#lits+1);
+        $xpnum++;
+    }
+}
+
+my $avgstr = sprintf("%4.3f", $litcnt / $xpnum);
+print "Avg Xp size: $avgstr\n";
+
+1;

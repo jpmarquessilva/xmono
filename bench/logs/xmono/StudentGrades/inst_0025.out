@@ -1,0 +1,25 @@
+Running ./scripts/monoxp on the following classifier & instance:
+    Fmt file:  ./bench/spec/StudentGrades/SG.txt
+    Inst file: ./bench/inst/StudentGrades/inst_0025.txt
+Additional options:  -t GRD -N all -w -s -v 1 
+AXp: 1 2 3 4
+CXp: 1
+CXp: 4
+CXp: 3
+CXp: 2
+Total running time:   0.040336 s
+Summary of running ./scripts/monoxp
+Total number of explanations: 5
+Average explanation size:     1.60
+Total number of AXp's:        1
+Average AXp size:             4.00
+Total number of CXp's:        4
+Average CXp size:             1.00
+Number of SAT oracle calls:   6
+Total time in SAT oracle:     0.036895
+Number of classifier calls:   26
+Total time in classifier:     0.000151
+
+real	0m0.082s
+user	0m0.044s
+sys	0m0.026s

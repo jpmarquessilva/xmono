@@ -1,0 +1,12 @@
+8
+Preg 0 17
+Plas 0 199
+Pres 0 122
+Skin 0 99
+Insu 0 846
+Mass 0 67.1
+Pedi 0.078 2.42
+Age  21 81
+2
+-1
++1

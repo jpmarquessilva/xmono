@@ -1,0 +1,24 @@
+#!/usr/bin/env perl
+
+# Compute total and average running time
+my ($ruser, $rsys, $ttime, $ncnt) = (1, 0, 0, 0);
+while(<>) {
+    if ($ruser && m/user\s+(\d+)m(\d+\.?\d*)s/) {
+        $ttime += (60*$1 + $2);
+        ($ruser, $rsys) = (0, 1);
+    }
+    elsif($rsys && m/sys\s+(\d+)m(\d+\.?\d*)s/) {
+        $ttime += (60*$1 + $2);
+        ($ruser, $rsys) = (1, 0);
+        $ncnt++;
+    }
+}
+
+my $stime = sprintf("%4.3f", $ttime);
+my $rtime = sprintf("%4.3f", $ttime/$ncnt);
+my $sc = sprintf("%3s", $ncnt);
+print "Total run time on $sc instances: $stime s\n";
+print "Average run time per instance:   $rtime s\n";
+
+1;
+

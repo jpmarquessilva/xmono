@@ -1,0 +1,116 @@
+Running ./scripts/monoxp on the following classifier & instance:
+    Desc file: ./tools/monoboost/models/pima.pkl
+    Fmt file:  ./bench/spec/PimaMono/PM.txt
+    Inst file: ./bench/inst/PimaMono/inst_0068.txt
+Additional options:  -t MBT -N all -w -s -v 10 
+Deciding whether to extract one AXp or one CXp
+Classif([4 109 64 44 99 34.8 0.905 26])=1  => time: 0.156638860702515
+Classif([4 109 64 44 99 34.8 0.905 26])=1  => time: 0.154655933380127
+Finding one AXp (w/ Univs: [])
+Classif([0 109 64 44 99 34.8 0.905 26])=1  => time: 0.156283855438232
+Classif([17 109 64 44 99 34.8 0.905 26])=1  => time: 0.156377077102661
+Classif([0 0 64 44 99 34.8 0.905 26])=1  => time: 0.156759023666382
+Classif([17 199 64 44 99 34.8 0.905 26])=1  => time: 0.157384872436523
+Classif([0 0 0 44 99 34.8 0.905 26])=1  => time: 0.156348943710327
+Classif([17 199 122 44 99 34.8 0.905 26])=1  => time: 0.15936803817749
+Classif([0 0 0 0 99 34.8 0.905 26])=1  => time: 0.158316135406494
+Classif([17 199 122 99 99 34.8 0.905 26])=1  => time: 0.158892154693604
+Classif([0 0 0 0 0 34.8 0.905 26])=1  => time: 0.162274837493896
+Classif([17 199 122 99 846 34.8 0.905 26])=1  => time: 0.160587072372437
+Classif([0 0 0 0 0 0 0.905 26])=1  => time: 0.157947063446045
+Classif([17 199 122 99 846 67.1 0.905 26])=1  => time: 0.161201953887939
+Classif([0 0 0 0 0 0 0.078 26])=-1  => time: 0.159670114517212
+Classif([17 199 122 99 846 67.1 2.42 26])=1  => time: 0.154744148254395
+Classif([0 0 0 0 0 0 0.905 21])=1  => time: 0.15615701675415
+Classif([17 199 122 99 846 67.1 0.905 81])=1  => time: 0.164769172668457
+AXp: 7
+Elapsed time:   2.855668 s
+WARNING! DIMACS header mismatch: wrong number of variables.
+Deciding whether to extract one AXp or one CXp
+Classif([4 109 64 44 99 34.8 0.078 26])=1  => time: 0.162201881408691
+Classif([4 109 64 44 99 34.8 2.42 26])=1  => time: 0.158312082290649
+Finding one AXp (w/ Univs: [7])
+Classif([0 109 64 44 99 34.8 0.078 26])=1  => time: 0.161143064498901
+Classif([17 109 64 44 99 34.8 2.42 26])=1  => time: 0.160071134567261
+Classif([0 0 64 44 99 34.8 0.078 26])=1  => time: 0.159698963165283
+Classif([17 199 64 44 99 34.8 2.42 26])=1  => time: 0.160223960876465
+Classif([0 0 0 44 99 34.8 0.078 26])=1  => time: 0.160563945770264
+Classif([17 199 122 44 99 34.8 2.42 26])=1  => time: 0.164491891860962
+Classif([0 0 0 0 99 34.8 0.078 26])=1  => time: 0.156653165817261
+Classif([17 199 122 99 99 34.8 2.42 26])=1  => time: 0.154139041900635
+Classif([0 0 0 0 0 34.8 0.078 26])=1  => time: 0.155236959457397
+Classif([17 199 122 99 846 34.8 2.42 26])=1  => time: 0.158164978027344
+Classif([0 0 0 0 0 0 0.078 26])=-1  => time: 0.156022787094116
+Classif([17 199 122 99 846 67.1 2.42 26])=1  => time: 0.152131080627441
+Classif([0 0 0 0 0 34.8 0.078 21])=1  => time: 0.165188074111938
+Classif([17 199 122 99 846 34.8 2.42 81])=1  => time: 0.168335914611816
+AXp: 6
+Elapsed time:   2.560266 s
+WARNING! DIMACS header mismatch: wrong number of variables.
+Deciding whether to extract one AXp or one CXp
+Classif([4 109 64 44 99 0 0.078 26])=1  => time: 0.159382820129395
+Classif([4 109 64 44 99 67.1 2.42 26])=1  => time: 0.163126945495605
+Finding one AXp (w/ Univs: [6 7])
+Classif([0 109 64 44 99 0 0.078 26])=1  => time: 0.17945408821106
+Classif([17 109 64 44 99 67.1 2.42 26])=1  => time: 0.160874843597412
+Classif([0 0 64 44 99 0 0.078 26])=1  => time: 0.158436059951782
+Classif([17 199 64 44 99 67.1 2.42 26])=1  => time: 0.157630205154419
+Classif([0 0 0 44 99 0 0.078 26])=1  => time: 0.155304193496704
+Classif([17 199 122 44 99 67.1 2.42 26])=1  => time: 0.160485029220581
+Classif([0 0 0 0 99 0 0.078 26])=1  => time: 0.16244101524353
+Classif([17 199 122 99 99 67.1 2.42 26])=1  => time: 0.160392999649048
+Classif([0 0 0 0 0 0 0.078 26])=-1  => time: 0.158507108688354
+Classif([17 199 122 99 846 67.1 2.42 26])=1  => time: 0.164480924606323
+Classif([0 0 0 0 99 0 0.078 21])=1  => time: 0.165426015853882
+Classif([17 199 122 99 99 67.1 2.42 81])=1  => time: 0.161402940750122
+AXp: 5
+Elapsed time:   2.274813 s
+WARNING! DIMACS header mismatch: wrong number of variables.
+Deciding whether to extract one AXp or one CXp
+Classif([4 109 64 44 0 0 0.078 26])=1  => time: 0.158508062362671
+Classif([4 109 64 44 846 67.1 2.42 26])=1  => time: 0.157843112945557
+Finding one AXp (w/ Univs: [5 6 7])
+Classif([0 109 64 44 0 0 0.078 26])=1  => time: 0.156556129455566
+Classif([17 109 64 44 846 67.1 2.42 26])=1  => time: 0.167493104934692
+Classif([0 0 64 44 0 0 0.078 26])=1  => time: 0.161042213439941
+Classif([17 199 64 44 846 67.1 2.42 26])=1  => time: 0.15711784362793
+Classif([0 0 0 44 0 0 0.078 26])=1  => time: 0.16223406791687
+Classif([17 199 122 44 846 67.1 2.42 26])=1  => time: 0.157424211502075
+Classif([0 0 0 0 0 0 0.078 26])=-1  => time: 0.157067060470581
+Classif([17 199 122 99 846 67.1 2.42 26])=1  => time: 0.161970853805542
+Classif([0 0 0 44 0 0 0.078 21])=1  => time: 0.162280082702637
+Classif([17 199 122 44 846 67.1 2.42 81])=1  => time: 0.155556917190552
+AXp: 4
+Elapsed time:   1.922573 s
+WARNING! DIMACS header mismatch: wrong number of variables.
+Deciding whether to extract one AXp or one CXp
+Classif([4 109 64 0 0 0 0.078 26])=-1  => time: 0.15798807144165
+Classif([4 109 64 99 846 67.1 2.42 26])=1  => time: 0.155212879180908
+Finding one CXp (w/ Fixes: [1 2 3 8])
+Classif([4 109 64 44 0 0 0.078 26])=1  => time: 0.153585910797119
+Classif([4 109 64 44 846 67.1 2.42 26])=1  => time: 0.154541015625
+Classif([4 109 64 0 99 0 0.078 26])=1  => time: 0.159584999084473
+Classif([4 109 64 99 99 67.1 2.42 26])=1  => time: 0.159469842910767
+Classif([4 109 64 0 0 34.8 0.078 26])=1  => time: 0.156883955001831
+Classif([4 109 64 99 846 34.8 2.42 26])=1  => time: 0.158037185668945
+Classif([4 109 64 0 0 0 0.905 26])=1  => time: 0.166045904159546
+Classif([4 109 64 99 846 67.1 0.905 26])=1  => time: 0.164509057998657
+CXp: 4 5 6 7
+Elapsed time:   1.592771 s
+WARNING! DIMACS header mismatch: wrong number of variables.
+Total running time:   11.213100 s
+Summary of running ./scripts/monoxp
+Total number of explanations: 5
+Average explanation size:     1.60
+Total number of AXp's:        4
+Average AXp size:             1.00
+Total number of CXp's:        1
+Average CXp size:             4.00
+Number of SAT oracle calls:   6
+Total time in SAT oracle:     0.038152
+Number of classifier calls:   70
+Total time in classifier:     11.169253
+
+real	0m11.250s
+user	0m27.967s
+sys	0m5.823s

@@ -1,0 +1,70 @@
+#!/usr/bin/env perl
+
+die "Usage: $0 <exp-id>\n" unless @ARGV == 1;
+my $expid = shift @ARGV;
+
+# 1. Explain rdtc on BR instances:
+if ($expid == 1) {
+    my $str = `cat exps/bankruptcy-risk-list`;
+    ##print "$str\n";
+    my @bench = split(/\s+/, $str);
+    ##print "@bench\n";
+    foreach my $id (@bench) {
+        my $strid = sprintf("%04d", $id);
+        my $refname = "inst_$strid";
+        my $inst = "./bench/inst/BankruptcyRisk/$refname.txt";
+        my $logf = "./bench/logs/xmono/BankruptcyRisk/$refname.out";
+        print "Running xmono on $inst\n";
+        system("(time ./scripts/xmono -v 1 -s -w -t RDT -f ./bench/spec/BankruptcyRisk/BR.txt -i $inst )>& $logf");
+    }
+}
+# 2. Explain grdc on SG instances:
+elsif ($expid == 2) {
+    my $str = `cat exps/student-grades-list`;
+    ##print "$str\n";
+    my @bench = split(/\s+/, $str);
+    ##print "@bench\n";
+    foreach my $id (@bench) {
+        my $strid = sprintf("%04d", $id);
+        my $refname = "inst_$strid";
+        my $inst = "./bench/inst/StudentGrades/$refname.txt";
+        my $logf = "./bench/logs/xmono/StudentGrades/$refname.out";
+        print "Running xmono on $inst\n";
+        system("(time ./scripts/xmono -v 1 -s -w -t GRD -f ./bench/spec/StudentGrades/SG.txt -i $inst )>& $logf");
+    }
+}
+# 3. Explain COMET on Auto-MPG instances (run using a docker container):
+elsif ($expid == 3) {
+    my $str = `cat exps/auto-mpg-list`;
+    ##print "$str\n";
+    my @bench = split(/\s+/, $str);
+    ##print "@bench\n";
+    foreach my $id (@bench) {
+        my $strid = sprintf("%04d", $id);
+        my $refname = "inst_$strid";
+        my $inst = "./bench/inst/Auto-MPG/$refname.txt";
+        my $logf = "./bench/logs/xmono/Auto-MPG/$refname.out";
+        print "Running xmono on $inst\n";
+        system("/usr/bin/bash -c '(time ./scripts/xmono -v 10 -s -w -m -t CMT -c ./bench/desc/auto-mpg.txt -f ./bench/spec/Auto-MPG/Auto-MPG.spec -i $inst )> $logf' ");
+    }
+}
+# 4. Explain monoboost on the PIMA
+elsif ($expid == 4) {
+    my $str = `cat exps/pima-mono-list`;
+    ##print "$str\n";
+    my @bench = split(/\s+/, $str);
+    ##print "@bench\n";
+    foreach my $id (@bench) {
+        my $strid = sprintf("%04d", $id);
+        my $refname = "inst_$strid";
+        my $inst = "./bench/inst/PimaMono/$refname.txt";
+        my $logf = "./bench/logs/xmono/PimaMono/$refname.out";
+        print "Running xmono on $inst\n";
+        system("(time ./scripts/xmono -v 10 -s -w -t MBT -c ./tools/monoboost/models/pima.pkl -f ./bench/spec/PimaMono/PM.txt -i $inst )>& $logf");
+    }
+}
+else {
+    die "Unknown experiment id $expid\n";
+}
+
+1;

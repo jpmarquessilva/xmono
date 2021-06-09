@@ -1,0 +1,5 @@
+3
+time
+duration
+log(1+duration)
+class

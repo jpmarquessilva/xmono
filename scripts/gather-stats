@@ -1,0 +1,87 @@
+#!/usr/bin/env perl
+
+# Compute total and average running time
+my ($rtime, $ncnt, $nexp, $sattime, $clstime) = (0, 0, 0, 0, 0);
+my ($axpsz, $totaxp, $cxpsz, $totcxp, $nxp) = (0, 0, 0, 0, 0);
+while(<>) {
+    #if (m/user\s+(\d+)m(\d+\.?\d*)s/) {
+    #    $ttime += (60*$1 + $2);
+    #}
+    #elsif(m/sys\s+(\d+)m(\d+\.?\d*)s/) {
+    #    $ttime += (60*$1 + $2);
+    #}
+    #elsif(m/real\s+(\d+)m(\d+\.?\d*)s/) {
+    #    $rtime += (60*$1 + $2);
+    #}
+    #else { }
+    if(m/Total running time:\s+(\d+\.?\d*)/) {
+        $rtime += $1;
+        $ncnt++;
+    }
+    elsif(m/Total number of explanations:\s+(\d+)/) {
+        $nexp += $1;
+    }
+    elsif(m/Total time in SAT oracle:\s+(\d+\.?\d*)/) {
+        $sattime += $1;
+    }
+    elsif(m/Total time in classifier:\s+(\d+\.?\d*)/) {
+        $clstime += $1;
+    }
+    elsif(m/Total number of AXp\'s:\s+(\d+)/) {
+        $nxp = $1;
+    }
+    elsif(m/Average AXp size:\s+(\d+)/) {
+        $axpsz += $1 * $nxp;
+        $totaxp += $nxp;
+        $nxp = 0;
+    }
+    elsif(m/Total number of CXp\'s:\s+(\d+)/) {
+        $nxp = $1;
+    }
+    elsif(m/Average CXp size:\s+(\d+\.?\d*)/) {
+        $cxpsz += $1 * $nxp;
+        $totcxp += $nxp;
+        $nxp = 0;
+    }
+}
+
+my $timestr = sprintf("%4.5f", $rtime);
+my $avgstr = sprintf("%4.5f", $rtime/$ncnt);
+my $sc = sprintf("%3s", $ncnt);
+print "Total run time on $sc instances:        $timestr s\n";
+print "Average run time per instance:          $avgstr s\n";
+$avgstr = sprintf("%4.5f", $rtime/$nexp);
+print "Average run time per explanation:       $avgstr s\n";
+#
+print "Number of expl.:                        $ncnt\n";
+$avgstr = sprintf("%4.5f", $nexp / $ncnt);
+print "Average num. expl.:                     $avgstr\n";
+#
+print "Number of AXp's:                        $totaxp\n";
+$avgstr = sprintf("%4.5f", $axpsz / $totaxp);
+print "Average AXp size:                       $avgstr\n";
+$avgstr = sprintf("%4.5f", $totaxp / $ncnt);
+print "Average # AXp's:                        $avgstr\n";
+#
+print "Number of CXp's:                        $totcxp\n";
+#print "cxpsz:  $cxpsz\n";
+#print "totcxp: $totcxp\n";
+$avgstr = sprintf("%4.5f", $cxpsz / $totcxp);
+print "Average CXp size:                       $avgstr\n";
+$avgstr = sprintf("%4.5f", $totcxp / $ncnt);
+print "Average # CXp's:                        $avgstr\n";
+#
+$timestr = sprintf("%4.5f", $sattime);
+$avgstr = sprintf("%4.5f", $sattime/$ncnt);
+print "Total SAT time on $sc instances:        $timestr s\n";
+print "Average SAT time per instance:          $avgstr s\n";
+$avgstr = sprintf("%4.5f", $sattime/$nexp);
+print "Average SAT time per explanation:       $avgstr s\n";
+#
+$timestr = sprintf("%4.5f", $clstime);
+$avgstr = sprintf("%4.5f", $clstime/$ncnt);
+print "Total classifier time on $sc instances: $timestr s\n";
+print "Average classifier time per instance:   $avgstr s\n";
+
+1;
+

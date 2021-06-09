@@ -1,0 +1,14 @@
+name = lupus
+min_max_values = {'time':[4.0,276.0],'duration':[0.1,106.0],'log(1+duration)':[0.1,4.67]}
+feature_names = time,duration,log(1+duration)
+feature_types = Real,Real,Real
+is_classification = True
+model_dir = ./bench/models/Lupus/
+monotonic_indices = 0,1,2
+monotonicity_directions = 0
+model_parameters = { 'batch_size': 8, 'epochs': 100, 'lr': 0.01, 'layer_size': 3, 'hidden_size': 16}
+tmp_prefix = 
+scalability = False
+is_parallel = True
+solver_name = optimathsat
+solver = Solver_OptiMathSat

@@ -1,0 +1,21 @@
+#!/usr/bin/env perl
+
+die "Usage: $0 <str-to-match> <files>\n" unless @ARGV > 1;
+my $str = shift @ARGV;
+
+# Compute total and average running time
+my ($ttime, $ncnt) = (0, 0);
+while(<>) {
+    if (m/$str\s+(\d+\.?\d*)/) {
+        $ttime += $1;
+        $ncnt++;
+    }
+}
+
+my $rtime = sprintf("%4.3f", $ttime/$ncnt);
+my $sc = sprintf("%3s", $ncnt);
+print "Total run time on $sc instances: $ttime s\n";
+print "Average run time per instance:   $rtime s\n";
+
+1;
+
